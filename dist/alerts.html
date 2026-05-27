@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>N-Gen Admin | Alerts</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-wrapper / offcanvas for mobile -->
+            <aside class="border-end" id="sidebar-wrapper">
+                <nav class="sidebar d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary overflow-auto" id="sidebar-nav" aria-label="Side Navigation">
+                    <a class="d-flex align-items-center mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="./">
+                        <i class="bi bi-bootstrap-fill bi-logo me-2"></i>
+                        <span class="fs-4">N-Gen Admin</span>
+                    </a>
+                    <hr style="margin-top: 6px !important" />
+                    <!-- Navbar-->
+                    <ul class="nav nav-pills flex-column mb-auto" id="sidebar-menu">
+                        <!-- Top Nav-->
+                        <li>
+                            <a class="nav-link link-body-emphasis" href="index.html">
+                                <i class="bi bi-columns me-1"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link link-body-emphasis" href="directory.html">
+                                <i class="bi bi-folder2 me-1"></i>
+                                Directory
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link link-body-emphasis" href="workspace.html">
+                                <i class="bi bi-person-workspace me-1"></i>
+                                Workspace
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Parent Link/Trigger-->
+                            <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis" data-bs-toggle="collapse" href="#submenu1" role="button" aria-expanded="true" aria-controls="submenu1">
+                                <span>
+                                    <i class="bi bi-columns-gap me-1"></i>
+                                    Components
+                                </span>
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <!-- Collapsible Sub-Nav-->
+                            <div class="collapse show" id="submenu1" data-bs-parent="#sidebar-menu">
+                                <ul class="nav flex-column ms-4">
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="avatars.html">Avatars</a></li>
+                                    <li class="nav-item"><a class="nav-link small active" href="alerts.html">Alerts</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="buttons.html">Buttons</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="cards.html">Cards</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="forms.html">Forms</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="modals.html">Modals</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="toasts.html">Toasts</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Parent Link/Trigger-->
+                            <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis" data-bs-toggle="collapse" href="#submenu2" role="button" aria-expanded="false" aria-controls="submenu2">
+                                <span>
+                                    <i class="bi bi-magic me-1"></i>
+                                    Utilities
+                                </span>
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <!-- Collapsible Sub-Nav-->
+                            <div class="collapse" id="submenu2" data-bs-parent="#sidebar-menu">
+                                <ul class="nav flex-column ms-4">
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="colors.html">Colors</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="typography.html">Typography</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="images.html">Images</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link link-body-emphasis" href="blank-page.html">
+                                <i class="bi bi-file-earmark-text me-1"></i>
+                                Blank Page
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Parent Link/Trigger-->
+                            <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis" data-bs-toggle="collapse" href="#submenu3" role="button" aria-expanded="false" aria-controls="submenu3">
+                                <span>
+                                    <i class="bi bi-exclamation-triangle me-1"></i>
+                                    Error Page
+                                </span>
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <!-- Collapsible Sub-Nav-->
+                            <div class="collapse" id="submenu3" data-bs-parent="#sidebar-menu">
+                                <ul class="nav flex-column ms-4">
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="401.html">401 Page</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="404.html">404 Page</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="500.html">500 Page</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <!-- Parent Link/Trigger-->
+                            <a class="nav-link d-flex justify-content-between align-items-center link-body-emphasis" data-bs-toggle="collapse" href="#submenu4" role="button" aria-expanded="false" aria-controls="submenu4">
+                                <span>
+                                    <i class="bi bi-shield-lock me-1"></i>
+                                    Authentication
+                                </span>
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <!-- Collapsible Sub-Nav-->
+                            <div class="collapse" id="submenu4" data-bs-parent="#sidebar-menu">
+                                <ul class="nav flex-column ms-4">
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="login.html">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="register.html">Register</a></li>
+                                    <li class="nav-item"><a class="nav-link small link-body-emphasis" href="forgot.html">Forgot Password</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="nav-link link-body-emphasis" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <i class="bi bi-copy me-1"></i>
+                                Modal
+                            </a>
+                        </li>
+                        <!-- li with border-top instead of hr-->
+                        <li class="border-top my-3"></li>
+                        <!-- Botton Nav-->
+                        <li class="mb-1">
+                            <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">Account</button>
+                            <div class="collapse" id="account-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" href="#">New...</a></li>
+                                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" href="#">Profile</a></li>
+                                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" href="#">Settings</a></li>
+                                    <li><a class="link-body-emphasis d-inline-flex text-decoration-none rounded" href="#">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-top my-3"></li>
+                        <li><a class="btn btn-success d-flex justify-content-center" href="https://ngendesign.com/template.php" role="button">Free Download</a></li>
+                    </ul>
+                    <hr />
+                    <!-- Bottom sidebar dropdown-->
+                    <div class="dropdown">
+                        <a class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="rounded-circle me-2" src="assets/images/user.png" alt="Guest User" width="32" height="32" />
+                            <strong>Guest</strong>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                            <li>
+                                <a class="dropdown-item" href="#" data-ng-btn="theme">
+                                    <i class="bi bi-moon-fill"></i>
+                                    <span class="ng-theme">Dark Theme</span>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Activity Log</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </aside>
+            <!-- Content Wrapper -->
+            <div id="content-wrapper">
+                <!-- header-content -->
+                <header id="header-content">
+                    <!-- header-nav  -->
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-start" id="header-nav" aria-label="Main Navigation">
+                        <div class="container-fluid">
+                            <!-- Mobile navbar collapes toggle-->
+                            <button class="btn btn-secondary me-2" id="sidebarToggle"><i class="bi bi-grid"></i></button>
+                            <a class="navbar-brand d-sm-none me-auto" href="#">N-Gen Admin</a>
+                            <button class="navbar-toggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-content" data-bs-target="#navbar-content" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                            <!-- Nabar Items-->
+                            <div class="collapse navbar-collapse" id="navbar-content">
+                                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                    <li class="nav-item active"><a class="nav-link" href="!#">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                        <!-- Dropdown-->
+                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
+                                            <h6 class="dropdown-header">
+                                                <div class="dropdown-user-details">
+                                                    <div class="dropdown-user-details-name"><b>@username</b></div>
+                                                    <div class="dropdown-user-details-email">no-reply@email.com</div>
+                                                </div>
+                                            </h6>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                            <a class="dropdown-item" href="#">Activity Log</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <!--Main-content -->
+                <main class="container-fluid pt-3 pb-5 min-vh-100" id="main-content">
+                    <!-- page header-->
+                    <header class="d-flex justify-content-between align-items-center mb-4">
+                        <h1 class="mb-0">Alerts</h1>
+                    </header>
+                    <!-- Alerts-->
+                    <div class="row">
+                        <!-- Basic Alerts-->
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h4 class="mb-0 fw-lighter">Basic Alerts</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-3">
+                                        Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight
+                                        <strong>required</strong>
+                                        contextual classes (e.g.,
+                                        <code>.alert-success</code>
+                                        ). For inline dismissal, use the
+                                        <a href="#dismissing">alerts JavaScript plugin</a>
+                                        .
+                                    </p>
+                                    <div class="alert alert-primary" role="alert">A simple primary alert&mdash;check it out!</div>
+                                    <div class="alert alert-secondary" role="alert">A simple secondary alert&mdash;check it out!</div>
+                                    <div class="alert alert-success" role="alert">A simple success alert&mdash;check it out!</div>
+                                    <div class="alert alert-danger" role="alert">A simple danger alert&mdash;check it out!</div>
+                                    <div class="alert alert-warning" role="alert">A simple warning alert&mdash;check it out!</div>
+                                    <div class="alert alert-info" role="alert">A simple info alert&mdash;check it out!</div>
+                                    <div class="alert alert-light" role="alert">A simple light alert&mdash;check it out!</div>
+                                    <div class="alert alert-dark" role="alert">A simple dark alert&mdash;check it out!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Basic Alerts With Icons-->
+                        <div class="col-sm-12 col-lg-6">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h4 class="mb-0 fw-lighter">Basic Alerts With Icons</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-3">
+                                        Similarly, you can use
+                                        <a href="/docs/5.3/utilities/flex">flexbox utilities</a>
+                                        and
+                                        <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
+                                        to create alerts with icons. Depending on your icons and content, you may want to add more utilities or custom styles.
+                                    </p>
+                                    <div class="alert alert-primary d-flex align-item-center" role="alert">
+                                        <i class="bi bi-info-circle pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>primary</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-secondary d-flex align-item-center" role="alert">
+                                        <i class="bi bi-info-square pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>secondary</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-success d-flex align-item-center" role="alert">
+                                        <i class="bi bi-check-circle pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>success</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-danger d-flex align-item-center" role="alert">
+                                        <i class="bi bi-x-octagon pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>danger</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-warning d-flex align-item-center" role="alert">
+                                        <i class="bi bi-question-square-fill pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>warning</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-info d-flex align-item-center" role="alert">
+                                        <i class="bi bi-info-square-fill pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>info</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-light d-flex align-item-center" role="alert">
+                                        <i class="bi bi-question-diamond pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>light</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-dark d-flex align-item-center" role="alert">
+                                        <i class="bi bi-question-circle pe-2"></i>
+                                        <div>
+                                            A simple
+                                            <b>dark</b>
+                                            alert&mdash;check it out!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Alerts With Dismissing-->
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h4 class="mb-0 fw-lighter">Alerts Dismissing</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-3">Using the alert JavaScript plugin, it’s possible to dismiss any alert inline.</p>
+                                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                        A simple
+                                        <b>primary</b>
+                                        alert&mdash;check it out!
+                                        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                                        A simple
+                                        <b>secondary</b>
+                                        alert&mdash;check it out!
+                                        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        A simple
+                                        <b>success</b>
+                                        alert&mdash;check it out!
+                                        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        A simple
+                                        <b>danger</b>
+                                        alert&mdash;check it out!
+                                        <button class="btn-close" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Additional Content-->
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <div class="header-title">
+                                        <h4 class="card-title">Additional content</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="mb-3">Alerts can also contain additional HTML elements like headings, paragraphs and dividers.</p>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="alert alert-success" role="alert">
+                                                <h4 class="alert-heading">Well done!</h4>
+                                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                                <hr />
+                                                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-lg-6">
+                                            <div class="alert alert-primary" role="alert">
+                                                <h4 class="alert-heading">Well done!</h4>
+                                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                                                <hr />
+                                                <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- Footer-content  -->
+                <footer class="container-fluid" id="footer-content">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center pt-3 pb-4 border-top">
+                        <p class="text-body-secondary mb-0">
+                            &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            N-Gen Admin
+                        </p>
+                        <ul class="list-inline text-decoration-none mb-0">
+                            <li class="list-inline-item"><a class="nav-link text-body-secondary px-2" href="#">Home</a></li>
+                            <li class="list-inline-item"><a class="nav-link text-body-secondary px-2" href="#">Link</a></li>
+                            <li class="list-inline-item"><a class="nav-link text-body-secondary px-2 disabled" href="#" aria-disabled="true">Disabled</a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- Scroll To Top -->
+        <button class="btn btn-primary btn-floating btn-lg position-fixed border bottom-0 end-0 me-3 mb-5 d-none" id="btn-back-to-top" type="button"><i class="bi bi-arrow-up"></i></button>
+        <!-- Modal Examples-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Boostrap Modal Example</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This is a Booststrap 5 modal example specifically for the sidebar modal trigger!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" type="button">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- N-Gen Admin Dashboard main.js scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/sidebar.js"></script>
+    </body>
+</html>
