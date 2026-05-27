@@ -11,9 +11,6 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Template with swipe
 ![Static Badge](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-![GitHub Repo stars](https://img.shields.io/github/stars/n-genesis/ngen-admin-dashboard?style=for-the-badge&logo=github)
-[![Static Badge](https://img.shields.io/badge/N--Gen%20Design-1E30F3?style=for-the-badge&label=Created%20By)](https://ngendesign.com)
-
 ## ✨ Features
 - Bootstrap 5 - Latest version with all modern utilities
 - Responsive - Mobile-optimized layouts across all devices
