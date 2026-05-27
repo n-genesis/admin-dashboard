@@ -1,0 +1,53 @@
+doctype html
+
+block config
+
+html(lang='en')
+
+    head
+
+        include includes/head/meta.pug
+        include includes/head/title.pug
+        
+        //- Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        
+        include includes/head/css.pug
+
+    body
+
+        #wrapper.d-flex
+
+            // Sidebar-wrapper / offcanvas for mobile 
+            include includes/sidebar-wrapper.pug
+            
+            // Content Wrapper 
+            #content-wrapper
+
+                    // header-content 
+                    header#header-content
+
+                        // header-nav  
+                        include includes/header-nav.pug
+
+                    //Main-content 
+                    main#main-content.container-fluid.pt-3.pb-5.min-vh-100
+
+                        block content
+            
+                    // Footer-content  
+                    include includes/footer.pug
+
+        // Scroll To Top 
+        include includes/back-to-top.pug
+
+        // Modal Examples
+        include components/modal-example.pug
+
+        +customModal('exampleModal', 'Boostrap Modal Example')
+            p This is a Booststrap 5 modal example specifically for the sidebar modal trigger!
+
+        include includes/scripts.pug
+        // N-Gen Admin Dashboard main.js scripts 
+        script(src='js/main.js') 
+        script(src='js/sidebar.js')

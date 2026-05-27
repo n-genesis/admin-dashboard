@@ -1,0 +1,105 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Workspace';
+    - var index = false;
+    - var current_page = 'worspace';
+    
+prepend css
+
+block content
+
+  // page header
+  include includes/page-header.pug
+
+  .row
+    section.col-xl-8.col-sm-12.mb-4.mb-sm-0
+
+      // header
+      include components/workspace-header.pug
+      
+      // Tabs Content
+      include components/workspace-tab-content.pug
+
+    // Workspace aside
+    aside.col-xl-4.col-sm-12
+      .card.mb-4
+        .card-body
+          .pb-2
+            h4.card-title.mb-3 About
+            p
+              | Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur
+              |   adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien
+              |   vitae pellentesque.
+            ul.ps-3.mb-0
+              li Lorem ipsum dolor sit amet consectetur.
+              li Lorem ipsum dolor sit amet consectetur adipiscing elit.
+          hr
+          .pt-2
+            h4.card-title.mb-4 My Skill
+            .d-flex.gap-2.flex-wrap
+              span.badge.text-bg-secondary.p-2 HTML
+              span.badge.text-bg-secondary.p-2 Bootstrap
+              span.badge.text-bg-secondary.p-2 Scss
+              span.badge.text-bg-secondary.p-2 Javascript
+              span.badge.text-bg-secondary.p-2 React
+              span.badge.text-bg-secondary.p-2 Angular
+        // end cardbody
+      // end card
+      .card.mb-4
+        .card-body
+          div
+            h4.card-title.mb-4 Personal Details
+            .table-responsive
+              table.table.table-bordered.mb-0
+                tbody
+                  tr
+                    th(scope="row") Name
+                    td Admin Username
+                  // end tr
+                  tr
+                    th(scope="row") Location
+                    td Pennslvania, United States
+                  // end tr
+                  tr
+                    th(scope="row") Language
+                    td English
+                  // end tr
+                  tr
+                    th(scope="row") Website
+                    td superadmin@website.com
+                  // end tr
+                // end tbody
+              // end table
+        // end card body
+      // end card
+      .card
+        .card-body
+          div
+            h4.card-title.mb-4 Work Experince
+            ul.list-unstyled.work-activity.mb-0
+              li.work-item(data-date="2020-21")
+                h6.lh-base.mb-0 Shady Corp.
+                p(class="mb-2'") Web Designer
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
+                  |   consectetur adipiscing elit quisque faucibus ex.
+              li.work-item(data-date="2019-20")
+                h6.lh-base.mb-0 Underground Company
+                p(class="mb-2'") Graphic Designer
+                p
+                  | Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
+                  |   consectetur adipiscing elit quisque faucibus ex.
+              li.work-item(data-date="2011-13")
+                h6.lh-base.mb-0 Top-Secret
+                p(class="mb-2'") Classified
+                p.mb-0
+                  | Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit
+                  |   amet consectetur adipiscing elit quisque faucibus ex.
+            // end ul
+        // end card-body
+      // end card
+
+
+append scripts
+

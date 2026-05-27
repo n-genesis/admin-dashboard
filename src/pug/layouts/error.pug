@@ -1,0 +1,45 @@
+doctype html
+
+block config
+
+html(lang='en')
+
+    head
+
+        include includes/head/meta.pug
+        include includes/head/title.pug
+        
+        //- Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        
+        include includes/head/css.pug
+
+    body
+
+        #error-page.d-flex.flex-column.min-vh-100
+
+            // Main page content
+            main.flex-grow-1
+                .container
+                    .row.justify-content-center
+
+                        block content
+            
+            // Footer  
+            footer.py-4.bg-light.mt-auto
+                .container-fluid.px-4
+                    .d-flex.align-items-center.justify-content-between.small
+                        .text-muted
+                            | Copyright &copy;
+                            script.
+                                document.write(new Date().getFullYear());
+                            |  N-Gen Admin
+                        div
+                            a(href='#') Privacy Policy
+                            | &middot;
+                            a(href='#') Terms &amp; Conditions
+
+
+        include includes/scripts.pug
+        // N-Gen Admin Dashboard main.js scripts 
+        script(src='js/main.js') 

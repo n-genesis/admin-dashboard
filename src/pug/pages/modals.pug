@@ -1,0 +1,93 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Modals';
+    - var index = false;
+    - var current_page = 'modals';
+
+prepend css
+
+block content
+
+    // page header
+    include includes/page-header.pug
+
+    // Modals
+    .row.gy-3
+        .col-12
+            // Card Examples
+            article.card
+                header.card-header
+                    h4.mb-0.fw-lighter.flex-grow-1 Form controls
+                .card-body
+                    p
+                        | The Modal component is a dialog box/popup window that is displayed on top of the current page:
+                    .row
+                        .col-12
+                            // Static Preview Container
+                            .modal(tabindex='-1' style='display: block; position: static;')
+                                .modal-dialog
+                                    .modal-content
+                                        .modal-header
+                                            h5.modal-title Style Preview
+                                            button.btn-close(type='button' aria-label='Close')
+                                        .modal-body
+                                            p This modal is permanently visible for design and styling tweaks.
+                                        .modal-footer
+                                            button.btn.btn-secondary(type='button') Secondary
+                                            button.btn.btn-primary(type='button') Primary
+                        // Styled Rounded
+                        .col-12
+                            .modal(tabindex='-1' style='display: block; position: static;')
+                                .modal-dialog
+                                    .modal-content.rounded-4.shadow
+                                        .modal-header.border-bottom-0
+                                            h1.modal-title.fs-5 Modal title
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        .modal-body.py-0
+                                            p
+                                                | This is a modal sheet, a variation of the modal that docs itself to the
+                                                | bottom of
+                                                | the viewport like the newer share sheets in iOS.
+                                        .modal-footer.flex-column.align-items-stretch.w-100.gap-2.pb-3.border-top-0
+                                            button.btn.btn-lg.btn-primary(type='button') Save changes
+                                            button.btn.btn-lg.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                        // Login Form
+                        .col-12
+                            .modal(tabindex='-1' style='display: block; position: static;')
+                                .modal-dialog
+                                    .modal-content.rounded-4.shadow
+                                        .modal-header.p-5.pb-4.border-bottom-0
+                                            h1.fw-bold.mb-0.fs-2 Sign up for free
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                        .modal-body.p-5.pt-0
+                                            form
+                                                .form-floating.mb-3
+                                                    input#floatingInput.form-control.rounded-3(type='email' placeholder='name@example.com')
+                                                    label(for='floatingInput')
+                                                        | Email
+                                                        | address
+                                                .form-floating.mb-3
+                                                    input#floatingPassword.form-control.rounded-3(type='password' placeholder='Password')
+                                                    label(for='floatingPassword') Password
+                                                button.w-100.mb-2.btn.btn-lg.rounded-3.btn-primary(type='submit')
+                                                    | Sign
+                                                    | up
+                                                small.text-body-secondary
+                                                    | By clicking Sign up, you
+                                                    | agree to the terms of use.
+                                                hr.my-4
+                                                h2.fs-5.fw-bold.mb-3 Or use a third-party
+                                                button.w-100.py-2.mb-2.btn.btn-outline-secondary.rounded-3(type='submit')
+                                                    i.bi.bi-google.me-1
+                                                    |                                                 Sign up with Google
+                                                button.w-100.py-2.mb-2.btn.btn-outline-primary.rounded-3(type='submit')
+                                                    i.bi.bi-facebook.me-1
+                                                    |                                                 Sign up with Facebook
+                                                button.w-100.py-2.mb-2.btn.btn-outline-secondary.rounded-3(type='submit')
+                                                    i.bi.bi-github.me-1
+                                                    |                                                 Sign up with GitHub
+
+
+append scripts
+

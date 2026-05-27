@@ -1,0 +1,353 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Cards';
+    - var index = false;
+    - var current_page = 'cards';
+
+prepend css
+
+block content
+
+    // page header
+    include includes/page-header.pug
+
+    // Card Examples
+    .row.gy-3
+        .col-12
+            // Card Examples
+            article.card
+                header.card-header
+                    h4.mb-0.fw-lighter.flex-grow-1 Card Examples
+                .card-body
+                    p
+                        | Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width
+                        | to start, so they&rsquo;ll naturally fill the full width of its parent element. This is easily customized
+                        | with our various sizing options.
+                    .row
+                        // Image, title, and button
+                        .col-lg-4
+                            .card.mb-3
+                                h3.card-header Card header
+                                .card-body
+                                    h5.card-title Special title treatment
+                                    h6.card-subtitle.text-muted Support card subtitle
+                                svg.d-block.user-select-none(xmlns='http://www.w3.org/2000/svg' width='100%' height='200' aria-label='Placeholder: Image cap' focusable='false' role='img' preserveaspectratio='xMidYMid slice' viewbox='0 0 318 180' style='font-size:1.125rem;text-anchor:middle')
+                                    rect(width='100%' height='100%' fill='#868e96')
+                                    text(x='50%' y='50%' fill='#dee2e6' dy='.3em') Image cap
+                                .card-body
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk of
+                                        | the
+                                        | card&apos;s content.
+                                ul.list-group.list-group-flush
+                                    li.list-group-item Cras justo odio
+                                    li.list-group-item Dapibus ac facilisis in
+                                    li.list-group-item Vestibulum at eros
+                                .card-body
+                                    a.card-link(href='#') Card link
+                                    a.card-link(href='#') Another link
+                                .card-footer.text-muted
+                                    | 2 days ago
+                        // Titles, text, and links
+                        .col-lg-4
+                            .card
+                                .card-body
+                                    h4.card-title Card title
+                                    h6.card-subtitle.mb-2.text-muted Card subtitle
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk of
+                                        | the
+                                        | card&apos;s content.
+                                    a.card-link(href='#') Card link
+                                    a.card-link(href='#') Another link
+                        // Image and Title
+                        .col-lg-4
+                            .card
+                                img.card-img-top(src='../assets/images/bots/UuVrZ-6E.jpg' alt='#')
+                                .card-body
+                                    h5.card-title Card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk of the card&rsquo;s content.
+                                    a.btn.btn-primary(href='#') Go somewhere
+        .col-12
+            article.card
+                header.card-header
+                    h4.mb-0.fw-lighter.flex-grow-1 Card with Images
+                .card-body
+                    p
+                        code .card-img-top
+                        |  and 
+                        code .card-img-bottom
+                        |  respectively set the top and bottom
+                        |                     corners rounded to match the card&rsquo;s borders. With 
+                        code .card-text
+                        | , text can be added to the
+                        |                     card. Text within 
+                        code .card-text
+                        |  can also be styled with the standard HTML tags.
+                    .row
+                        .col-sm-6.col-md-6.col-lg-3
+                            .card
+                                img.card-img-top(src='../assets/images/bots/UuVrZ-6E.jpg' alt='#')
+                                .card-body
+                                    h4.card-title Card title
+                                    p.card-text
+                                        | It is a long established fact that a reader will be distracted by
+                                        | the readable content of a page when looking at its layout.
+                                    a.btn.btn-primary(href='#') Button
+                        .col-sm-6.col-md-6.col-lg-3
+                            .card
+                                img.card-img-top(src='../assets/images/bots/UuVrZ-6E.jpg' alt='#')
+                                .card-body
+                                    h4.card-title Card title
+                                    p.card-text
+                                        | It is a long established fact that a reader will be distracted by
+                                        | the readable content of a page when looking at its layout.
+                                    p
+                                        | It is a long established fact that a the readable content of a page when looking at
+                                        | its layout.
+                                    a.card-link(href='#') Card link
+                                    a.card-link(href='#') Another link
+                        .col-sm-6.col-md-6.col-lg-3
+                            .card
+                                img.card-img-top(src='../assets/images/bots/UuVrZ-6E.jpg' alt='#')
+                                .card-body
+                                    h4.card-title Card title
+                                    p.card-text
+                                        | It is a long established fact that a reader will be distracted by
+                                        | the readable content of a page when looking at its layout.
+                                    ul.list-group.list-group-flush
+                                        li.list-group-item Cras justo odio
+                                        li.list-group-item Vestibulum at eros
+                        .col-sm-6.col-md-6.col-lg-3
+                            .card
+                                img.card-img-top(src='../assets/images/bots/UuVrZ-6E.jpg' alt='#')
+                                .card-body
+                                    h4.card-title Card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk of the card&apos;s content.
+                                ul.list-group.list-group-flush
+                                    li.list-group-item Cras justo odio
+                                .card-body
+                                    a.card-link(href='#') Card link
+                                    a.card-link(href='#') Another link
+        // Card Styles
+        .col-12
+            article.card
+                header.card-header
+                    h4.mb-0.fw-lighter.flex-grow-1 Card Styles
+                .card-body
+                    p
+                        | Set a 
+                        code background-color
+                        |  with contrasting foreground 
+                        code color
+                        |  with  our 
+                        code .text-bg-{color}
+                        |  helpers . Previously it was required to manually pair your choice of 
+                        code .text-{color}
+                        |  and 
+                        code .bg-{color}
+                        |  utilities for styling, which you still may use if you prefer.
+                    .row
+                        .col-lg-4
+                            .card.text-white.bg-primary.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Primary card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.text-white.bg-secondary.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Secondary card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.text-white.bg-success.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Success card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.text-white.bg-danger.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Danger card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.text-white.bg-warning.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Warning card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.text-white.bg-info.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Info card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.bg-light.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Light card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.text-white.bg-dark.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Dark card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+        // Card Boarder Styles
+        .col-12
+            article.card.mb-4
+                header.card-header
+                    h4.mb-0.fw-lighter.flex-grow-1 Card Boarder Styles
+                .card-body
+                    p
+                        | Use to change just the 
+                        code border-color
+                        |  of a card. Note that you can put 
+                        code .text-{color}
+                        |  classes on the parent 
+                        code .card
+                        |  or a subset of the card&rsquo;s contents as shown below.
+                    .row
+                        .col-lg-4
+                            .card.border-primary.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Primary card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-secondary.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Secondary card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-success.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Success card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-danger.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Danger card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-warning.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Warning card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-info.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Info card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-light.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Light card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+                        .col-lg-4
+                            .card.border-dark.mb-3
+                                .card-header Header
+                                .card-body
+                                    h4.card-title Dark card title
+                                    p.card-text
+                                        | Some quick example text to build on the card title and make up the
+                                        | bulk
+                                        | of
+                                        | the
+                                        | card&apos;s content.
+
+
+
+append scripts
+

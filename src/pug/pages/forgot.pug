@@ -1,0 +1,29 @@
+extends ../layouts/authentication.pug
+
+block config
+    - var pageTitle = 'Login';
+    - var index = false;
+    - var current_page = 'login';
+
+prepend css
+
+block content
+
+    .col-lg-5
+        .card.shadow-lg.border-0.rounded-lg.mt-5
+            .card-header
+                h3.my-3.fw-lighter.text-center Password Recovery
+            .card-body
+                .small.mb-3.text-muted
+                    | Enter your email address and we will send you a link
+                    | to reset your password.
+                form
+                    .form-floating.mb-3
+                        input#inputEmail.form-control(type='email' placeholder='name@example.com')
+                        label(for='inputEmail') Email address
+                    .d-flex.align-items-center.justify-content-between.mt-4.mb-0
+                        a.small(href='login.html') Return to login
+                        a.btn.btn-primary(href='login.html') Reset Password
+            .card-footer.text-center.py-3
+                .small
+                    a(href='register.html') Need an account? Sign up!

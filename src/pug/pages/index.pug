@@ -1,0 +1,36 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Dashboard';
+    - var index = false;
+    - var current_page = 'index';
+    
+prepend css
+
+block content
+
+  // page header
+  include includes/page-header.pug
+
+  // Stats Cards 
+  include components/stats-cards.pug
+
+  // Chart.js Demos 
+  include components/chart-examples.pug
+
+  // Recent Activity 
+  include components/recent-activity.pug
+
+  // Example Cards
+  include components/card-examples.pug
+
+  // Data Table Demo
+  include components/datatable.pug
+
+append scripts
+
+        // Chart.js demo scripts 
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js' crossorigin="anonymous")
+        script(src='js/demo/chart-area-demo.js')
+        script(src='js/demo/chart-bar-demo.js')
+

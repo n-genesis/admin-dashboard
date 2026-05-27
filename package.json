@@ -12,13 +12,13 @@
     "responsive",
     "open-soruce"
   ],
-  "homepage": "https://github.com/n-genesis/ngen-admin-dashboard",
+  "homepage": "https://github.com/n-genesis/admin-dashboard",
   "bugs": {
-    "url": "https://github.com/n-genesis/ngen-admin-dashboard/issues"
+    "url": "https://github.com/n-genesis/admin-dashboard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/n-genesis/ngen-admin-dashboard.git"
+    "url": "git+https://github.com/n-genesis/admin-dashboard.git"
   },
   "license": "MIT",
   "author": {
@@ -45,5 +45,9 @@
     "pug": "^3.0.4",
     "sass": "^1.99.0",
     "shelljs": "^0.10.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8"
   }
 }

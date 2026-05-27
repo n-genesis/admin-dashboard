@@ -1,0 +1,26 @@
+// 1. Required: Import Bootstrap's functions first
+@import "bootstrap/scss/functions";
+
+// 2. Import Bootstrap's variables to use them in your overrides
+@import "themes/_litera-variables";
+// @import "bootstrap/scss/variables";
+
+// 3. Customize theme colors
+// Directly overwrite default variables like $primary
+// $primary: #0074d9;
+// $blue: #1e30f3;
+
+// // Or modify the $theme-colors map for multiple overrides
+// $custom-theme-colors: (
+//   "primary": $primary,
+//   "blue": $blue
+// );
+
+// // Merge your changes back into the main map
+// $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+
+// 4. Required: Finally import all of Bootstrap to apply changes
+@import "bootstrap/scss/bootstrap";
+
+@import "themes/_litera-bootswatch";

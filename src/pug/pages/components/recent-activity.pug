@@ -1,0 +1,61 @@
+section
+    .row.mb-4
+        // Activity Timeline
+        .col-12.col-lg-8
+            .card.shadow-sm.h-100
+                .card-header
+                    .d-flex.justify-content-between.align-items-center
+                        h4.mb-0.fw-lighter.flex-grow-1 Recent Activity
+                        .card-header-btn-group
+                        button.btn.btn-outline-primary.me-2(data-bsnippet="btn-save", type="button", role="button", data-bsnippet-btn="save-snippet")
+                            i.bi.bi-file-earmark-check
+                            |  View All
+                        button.btn.btn-outline-secondary(data-bsnippet="btn-save", type="button", role="button", data-bsnippet-btn="save-snippet", data-redirect="true")
+                            i.bi.bi-file-earmark-pdf
+                            |  Save PDF
+
+                .card-body
+                    section
+                        .d-flex.mb-3
+                            .flex-shrink-0
+                                .bg-primary.bg-opacity-10.p-2.rounded
+                                    i.bi.bi-person-plus.text-primary
+                            .flex-grow-1.ms-3
+                                h6.mb-1 New user registered
+                                p.text-muted.small.mb-0 2 minutes ago
+                        .d-flex.mb-3
+                            .flex-shrink-0
+                                .bg-success.bg-opacity-10.p-2.rounded
+                                    i.bi.bi-check.text-success
+                            .flex-grow-1.ms-3
+                                h6.mb-1 Project milestone completed
+                                p.text-muted.small.mb-0 1 hour ago
+                        .d-flex
+                            .flex-shrink-0
+                                .bg-warning.bg-opacity-10.p-2.rounded
+                                    i.bi.bi-bell.text-warning
+                            .flex-grow-1.ms-3
+                                h6.mb-1 New feature release
+                                p.text-muted.small.mb-0 2 hours ago
+
+        // Quick Actions
+        .col-12.col-lg-4
+            .card.shadow-sm.h-100
+                .card-header
+                    h4.mb-0.fw-lighter.flex-grow-1 Quick Actions
+                .card-body
+                    .d-grid.gap-2
+                        button.btn.btn-outline-primary
+                            i.bi.bi-plus.me-2
+
+                            | Add New Project
+                        button.btn.btn-outline-success
+                            i.bi.bi-person-plus.me-2
+                            | Manage Team
+                        button.btn.btn-outline-info
+                            i.bi.bi-gear.me-2
+
+                            | Settings
+                        button.btn.btn-outline-warning
+                            i.bi-file-earmark-text-fill.me-2
+                            | Generate Report

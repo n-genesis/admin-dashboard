@@ -1,0 +1,65 @@
+header.card.mb-4
+    .card-body.pb-0
+        .row.align-items-center
+            // Name & User Role
+            .col-md-3
+                .text-center.border-end
+                    img.img-fluid.avatar-img.rounded-circle(
+                        alt="avatar image" 
+                        src="assets/images/user.png"
+                        )
+                    h4.text-primary.mt-3.mb-2 Admin Username
+                    h5.text-muted.mb-0 Administrator
+            // end col
+            .col-md-9
+                // About Me
+                .row
+                    h4.card-title.mb-2 About Me
+                    p.mb-0.text-muted
+                        | Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet
+                        |   consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque
+                        |   faucibus ex sapien vitae pellentesque.
+                // email & phone #
+                .mt-2
+                    p.text-muted.mb-2.fw-medium
+                        i.bi.bi-envelope.me-2
+                        | superadmin@website.com
+                    p.text-muted.fw-medium.mb-0
+                        i.bi.bi-telephone-fill.me-2
+                        | (123) 456-7890
+                // end row
+                ul.nav.nav-tabs.nav-tabs-custom.border-bottom-0.mt-3.nav-justfied(role="tablist")
+                    li.nav-item(role="presentation")
+                        a.nav-link.px-4.active(
+                            role="tab" 
+                            href="#projects-tab" 
+                            data-bs-toggle="tab"
+                            )
+                            span.d-block.d-sm-none
+                                i.bi.bi-house-fill
+                            span.d-none.d-sm-block Projects
+                    // end li
+                    li.nav-item(role="presentation")
+                        a.nav-link.px-4(
+                            role="tab" 
+                            href="#tasks-tab" 
+                            data-bs-toggle="tab"
+                            )
+                            span.d-block.d-sm-none
+                                i.bi.bi-list
+                            span.d-none.d-sm-block Tasks
+                    // end li
+                    li.nav-item(role="presentation")
+                        a.nav-link.px-4(
+                            role="tab" 
+                            href="#team-tab" 
+                            data-bs-toggle="tab"
+                            )
+                            span.d-block.d-sm-none
+                                i.bi.bi-people-fill
+                            span.d-none.d-sm-block Teams
+                    // end li
+                    // end ul
+                    // end col
+                    // end row
+                    // end card body

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   LAYOUT: SIDEBAR & PAGE WRAPPER
+   ========================================================================== */
+/*!
+ * @file      sidebar_wrapper.scss 
+ * @section   Layout: Sidebar & Page Wrapper
+ * @desc      Controls the core application shell layout, off-canvas transitions,
+ *            and fixed structural positioning for the administrative sidebar.
+ */
+/*--------------------------------------------------------------
+# Main Navigation bar
+--------------------------------------------------------------*/
+#navbar-main {
+    
+}
+#wrapper {
+  overflow-x: hidden;
+}
+#sidebar-wrapper {
+  min-height: 100vh;
+  left: -15rem;
+  transition: all 0.25s ease-out;
+  position: fixed;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  position: relative;
+  left: 0px;
+  /* Push it to the right of the fixed element's width */
+  width: 100%;
+  /* Calculate remaining width */
+  height: 100vh;
+  /* Example height */
+  transition: all 0.25s ease-out;
+}
+
+#page-content {
+  
+}
+
+#page-content-wrapper #page-footer .bi {
+  color: var(--bs-black) !important;
+}
+
+body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
+  left: 0;
+}
+
+body.ng-sidenav-toggled #wrapper #page-content-wrapper {
+  left: 240px;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    left: 0;
+  }
+
+  #page-content-wrapper {
+    left: 240px;
+    /* Push it to the right of the fixed element's width */
+    width: calc(100% - 240px);
+  }
+
+  body.ng-sidenav-toggled #wrapper #sidebar-wrapper {
+    left: -15rem;
+  }
+
+  /**/
+  body.ng-sidenav-toggled #wrapper #page-content-wrapper {
+    left: 0;
+    width: 100%;
+  }
+
+}

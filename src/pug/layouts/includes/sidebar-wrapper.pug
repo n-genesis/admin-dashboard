@@ -1,0 +1,150 @@
+aside#sidebar-wrapper.border-end
+    nav#sidebar-nav.sidebar.d-flex.flex-column.flex-shrink-0.p-3.bg-body-tertiary.overflow-auto(aria-label="Side Navigation")
+        a.d-flex.align-items-center.mb-md-0.me-md-auto.link-body-emphasis.text-decoration-none(href="./")
+            i.bi.bi-bootstrap-fill.bi-logo.me-2
+            span.fs-4 N-Gen Admin
+        hr(style="margin-top: 6px !important;")
+
+        // Navbar
+        ul#sidebar-menu.nav.nav-pills.flex-column.mb-auto
+            // Top Nav
+            li
+                a.nav-link(href="index.html" class=(current_page === 'index' ? 'active' : 'link-body-emphasis'))
+                    i.bi.bi-columns.me-1
+
+                    |  Dashboard
+            li
+                a.nav-link(href="directory.html" class=(current_page === 'directory' ? 'active' : 'link-body-emphasis'))
+                    i.bi.bi-folder2.me-1
+
+                    |  Directory
+            li
+                a.nav-link(href="workspace.html" class=(current_page === 'worspace' ? 'active' : 'link-body-emphasis'))
+                    i.bi.bi-person-workspace.me-1
+                    |  Workspace
+            li.nav-item
+                // Parent Link/Trigger
+                a.nav-link.d-flex.justify-content-between.align-items-center.link-body-emphasis(data-bs-toggle="collapse", href="#submenu1", role="button", aria-expanded=(['avatars', 'alerts', 'buttons', 'cards', 'forms', 'modals', 'toasts' ].includes(current_page) ? 'true' : 'false'), aria-controls="submenu1")
+                    span
+                        i.bi.bi-columns-gap.me-1
+
+                        |  Components
+                    i.bi.bi-chevron-down
+                // Collapsible Sub-Nav
+                #submenu1.collapse(class=(['avatars', 'alerts', 'buttons', 'cards', 'forms', 'modals', 'toasts' ].includes(current_page) ? 'show' : ''), data-bs-parent="#sidebar-menu")
+                    ul.nav.flex-column.ms-4
+                        li.nav-item
+                            a.nav-link.small(class=(['avatars'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="avatars.html") Avatars
+                        li.nav-item
+                            a.nav-link.small(class=(['alerts'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="alerts.html") Alerts
+                        li.nav-item
+                            a.nav-link.small(class=(['buttons'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="buttons.html") Buttons
+                        li.nav-item
+                            a.nav-link.small(class=(['cards'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="cards.html") Cards
+                        li.nav-item
+                            a.nav-link.small(class=(['forms'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="forms.html") Forms
+                        li.nav-item
+                            a.nav-link.small(class=(['modals'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="modals.html") Modals
+                        li.nav-item
+                            a.nav-link.small(class=(['toasts'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="toasts.html") Toasts
+            li.nav-item
+                // Parent Link/Trigger
+                a.nav-link.d-flex.justify-content-between.align-items-center.link-body-emphasis(data-bs-toggle="collapse", href="#submenu2", role="button", aria-expanded=(['colors', 'typography', 'images'].includes(current_page) ? 'true' : 'false'), aria-controls="submenu2")
+                    span
+                        i.bi.bi-magic.me-1
+
+                        |  Utilities
+                    i.bi.bi-chevron-down
+                // Collapsible Sub-Nav
+                #submenu2.collapse(class=(['colors', 'typography', 'images'].includes(current_page) ? 'show' : ''), data-bs-parent="#sidebar-menu")
+                    ul.nav.flex-column.ms-4
+                        li.nav-item
+                            a.nav-link.small(class=(['colors'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="colors.html") Colors
+                        li.nav-item
+                            a.nav-link.small(class=(['typography'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="typography.html") Typography
+                        li.nav-item
+                            a.nav-link.small(class=(['images'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="images.html") Images             
+            li
+                a.nav-link(href="blank-page.html" class=(current_page === 'blank-page' ? 'active' : 'link-body-emphasis'))
+                    i.bi.bi-file-earmark-text.me-1
+                    |  Blank Page
+            li.nav-item
+                // Parent Link/Trigger
+                a.nav-link.d-flex.justify-content-between.align-items-center.link-body-emphasis(data-bs-toggle="collapse", href="#submenu3", role="button", aria-expanded="false", aria-controls="submenu3")
+                    span
+                        i.bi.bi-exclamation-triangle.me-1
+
+                        |  Error Page
+                    i.bi.bi-chevron-down
+                // Collapsible Sub-Nav
+                #submenu3.collapse(data-bs-parent="#sidebar-menu")
+                    ul.nav.flex-column.ms-4
+                        li.nav-item
+                            a.nav-link.small.link-body-emphasis(href="401.html") 401 Page
+                        li.nav-item
+                            a.nav-link.small.link-body-emphasis(href="404.html") 404 Page
+                        li.nav-item
+                            a.nav-link.small.link-body-emphasis(href="500.html") 500 Page
+            li.nav-item
+                // Parent Link/Trigger
+                a.nav-link.d-flex.justify-content-between.align-items-center.link-body-emphasis(data-bs-toggle="collapse", href="#submenu4", role="button", aria-expanded="false", aria-controls="submenu4")
+                    span
+                        i.bi.bi-shield-lock.me-1
+                        |  Authentication
+                    i.bi.bi-chevron-down
+                // Collapsible Sub-Nav
+                #submenu4.collapse(data-bs-parent="#sidebar-menu")
+                    ul.nav.flex-column.ms-4
+                        li.nav-item
+                            a.nav-link.small.link-body-emphasis(href="login.html") Login
+                        li.nav-item
+                            a.nav-link.small.link-body-emphasis(href="register.html") Register
+                        li.nav-item
+                            a.nav-link.small.link-body-emphasis(href="forgot.html") Forgot Password
+            li
+                a.nav-link.link-body-emphasis(href="#", data-bs-toggle="modal", data-bs-target="#exampleModal")
+                    i.bi.bi-copy.me-1
+
+                    |  Modal
+
+            // li with border-top instead of hr
+            li.border-top.my-3
+
+            // Botton Nav
+            li.mb-1
+                button.btn.btn-toggle.d-inline-flex.align-items-center.rounded.border-0.collapsed(data-bs-toggle="collapse", data-bs-target="#account-collapse", aria-expanded="false")
+                    | Account
+                #account-collapse.collapse
+                    ul.btn-toggle-nav.list-unstyled.fw-normal.pb-1.small
+                        li
+                            a.link-body-emphasis.d-inline-flex.text-decoration-none.rounded(href="#") New...
+                        li
+                            a.link-body-emphasis.d-inline-flex.text-decoration-none.rounded(href="#") Profile
+                        li
+                            a.link-body-emphasis.d-inline-flex.text-decoration-none.rounded(href="#") Settings
+                        li
+                            a.link-body-emphasis.d-inline-flex.text-decoration-none.rounded(href="#") Sign out
+            li.border-top.my-3
+            li
+                a.btn.btn-success.d-flex.justify-content-center(href="https://ngendesign.com/template.php", role="button") Free Download
+
+        hr
+
+        // Bottom sidebar dropdown
+        .dropdown
+            a.d-flex.align-items-center.link-body-emphasis.text-decoration-none.dropdown-toggle(href="#", data-bs-toggle="dropdown", aria-expanded="false")
+                img.rounded-circle.me-2(src="assets/images/user.png", alt="Guest User", width="32", height="32")
+                strong Guest
+            ul.dropdown-menu.text-small.shadow
+                li
+                    a.dropdown-item(href="#", data-ng-btn="theme")
+                        i.bi.bi-moon-fill
+                        span.ng-theme  Dark Theme
+                li
+                    a.dropdown-item(href="#") Settings
+                li
+                    a.dropdown-item(href="#") Activity Log
+                li
+                    hr.dropdown-divider
+                li
+                    a.dropdown-item(href="#") Logout

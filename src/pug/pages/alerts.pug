@@ -1,0 +1,168 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Alerts';
+    - var index = false;
+    - var current_page = 'alerts';
+
+prepend css
+
+block content
+
+    // page header
+    include includes/page-header.pug
+
+    // Alerts
+    .row
+        // Basic Alerts
+        .col-sm-12.col-lg-6
+            .card.mb-3
+                .card-header
+                    h4.mb-0.fw-lighter Basic Alerts
+                .card-body
+                    p.mb-3
+                        | Alerts are available for any length of text, as well as an optional close button. For proper styling, use one of the eight 
+                        strong required
+                        |  contextual classes (e.g., 
+                        code .alert-success
+                        | ). For inline dismissal, use the 
+                        a(href='#dismissing') alerts JavaScript plugin
+                        | .
+                    .alert.alert-primary(role='alert')
+                        | A simple primary alert&mdash;check it out!
+                    .alert.alert-secondary(role='alert')
+                        | A simple secondary alert&mdash;check it out!
+                    .alert.alert-success(role='alert')
+                        | A simple success alert&mdash;check it out!
+                    .alert.alert-danger(role='alert')
+                        | A simple danger alert&mdash;check it out!
+                    .alert.alert-warning(role='alert')
+                        | A simple warning alert&mdash;check it out!
+                    .alert.alert-info(role='alert')
+                        | A simple info alert&mdash;check it out!
+                    .alert.alert-light(role='alert')
+                        | A simple light alert&mdash;check it out!
+                    .alert.alert-dark(role='alert')
+                        | A simple dark alert&mdash;check it out!
+        // Basic Alerts With Icons
+        .col-sm-12.col-lg-6
+            .card.mb-3
+                .card-header
+                    h4.mb-0.fw-lighter Basic Alerts With Icons
+                .card-body
+                    p.mb-3
+                        | Similarly, you can use 
+                        a(href='/docs/5.3/utilities/flex') flexbox utilities
+                        |  and 
+                        a(href='https://icons.getbootstrap.com/') Bootstrap Icons
+                        |  to create alerts with icons. Depending on your icons
+                        |  and content, you may want to add more utilities or custom styles.
+                    .alert.alert-primary.d-flex.align-item-center(role='alert')
+                        i.bi.bi-info-circle.pe-2
+                        div
+                            | A simple 
+                            b primary
+                            |  alert&mdash;check it out!
+                    .alert.alert-secondary.d-flex.align-item-center(role='alert')
+                        i.bi.bi-info-square.pe-2
+                        div
+                            | A simple 
+                            b secondary
+                            |  alert&mdash;check it out!
+                    .alert.alert-success.d-flex.align-item-center(role='alert')
+                        i.bi.bi-check-circle.pe-2
+                        div
+                            | A simple 
+                            b success
+                            |  alert&mdash;check it out!
+                    .alert.alert-danger.d-flex.align-item-center(role='alert')
+                        i.bi.bi-x-octagon.pe-2
+                        div
+                            | A simple 
+                            b danger
+                            |  alert&mdash;check it out!
+                    .alert.alert-warning.d-flex.align-item-center(role='alert')
+                        i.bi.bi-question-square-fill.pe-2
+                        div
+                            | A simple 
+                            b warning
+                            |  alert&mdash;check it out!
+                    .alert.alert-info.d-flex.align-item-center(role='alert')
+                        i.bi.bi-info-square-fill.pe-2
+                        div
+                            | A simple 
+                            b info
+                            |  alert&mdash;check it out!
+                    .alert.alert-light.d-flex.align-item-center(role='alert')
+                        i.bi.bi-question-diamond.pe-2
+                        div
+                            | A simple 
+                            b light
+                            |  alert&mdash;check it out!
+                    .alert.alert-dark.d-flex.align-item-center(role='alert')
+                        i.bi.bi-question-circle.pe-2
+                        div
+                            | A simple 
+                            b dark
+                            |  alert&mdash;check it out!
+    .row
+        // Alerts With Dismissing
+        .col-12
+            .card.mb-3
+                .card-header
+                    h4.mb-0.fw-lighter Alerts Dismissing
+                .card-body
+                    p.mb-3
+                        | Using the alert JavaScript plugin, it’s possible to dismiss any alert inline.
+                    .alert.alert-primary.alert-dismissible.fade.show(role='alert')
+                        | A simple 
+                        b primary
+                        |   alert&mdash;check it out!
+                        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+                    .alert.alert-secondary.alert-dismissible.fade.show(role='alert')
+                        | A simple 
+                        b secondary
+                        |  alert&mdash;check it out!
+                        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+                    .alert.alert-success.alert-dismissible.fade.show(role='alert')
+                        | A simple 
+                        b success
+                        |  alert&mdash;check it out!
+                        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+                    .alert.alert-danger.alert-dismissible.fade.show(role='alert')
+                        | A simple 
+                        b danger
+                        |  alert&mdash;check it out!
+                        button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+    .row
+        // Additional Content
+        .col-12
+            .card.mb-3
+                .card-header.d-flex.justify-content-between
+                    .header-title
+                        h4.card-title Additional content
+                .card-body
+                    p.mb-3
+                        | Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
+                    .row
+                        .col-sm-12.col-lg-6
+                            .alert.alert-success(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                    | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                    | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+                        .col-sm-12.col-lg-6
+                            .alert.alert-primary(role='alert')
+                                h4.alert-heading Well done!
+                                p
+                                    | Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+                                hr
+                                p.mb-0
+                                    | Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+
+
+append scripts
+

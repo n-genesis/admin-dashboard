@@ -1,0 +1,19 @@
+header.d-flex.justify-content-between.align-items-center.mb-4
+    h1.mb-0 #{pageTitle}
+    if pageTitle === 'Dashboard'
+        .dropdown
+            button.btn.btn-primary.dropdown-toggle(type="button" data-bs-toggle="dropdown")
+                | Dropdown
+            ul.dropdown-menu
+                li
+                    a.dropdown-item(href="#") Action
+                li
+                    a.dropdown-item(href="#") Another Action
+                li
+                    a.dropdown-item(href="#") The Third Action
+if index
+    nav.mt-2(aria-label="breadcrumb")
+        ol.breadcrumb.mb-4
+            li.breadcrumb-item
+                a(href='index.html') Dashboard
+            li.breadcrumb-item.active #{pageTitle}

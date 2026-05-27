@@ -1,0 +1,89 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Toasts';
+    - var index = false;
+    - var current_page = 'toasts';
+
+prepend css
+
+block content
+
+    // page header
+    include includes/page-header.pug
+
+    // Notifcations Examples
+    .row
+        .col-lg-6
+            .card.mb-3
+                .card-header.d-flex.justify-content-between
+                    .header-title
+                        h4.card-title Notifications
+                .card-body
+                    p
+                        | Toasts are as flexible as you need and have very little required markup. At a minimum, we require a
+                        | single element to contain your &ldquo;toasted&rdquo; content and strongly encourage a dismiss button.
+                    .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                        .toast-header
+                            svg.bd-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' preserveaspectratio='xMidYMid slice' focusable='false' role='img')
+                                rect(width='100%' height='100%' fill='#007aff')
+                            strong.me-auto Bootstrap
+                            small 11 mins ago
+                            button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                        .toast-body
+                            | Hello, world! This is a toast message.
+            .card
+                .card-header.d-flex.justify-content-between
+                    .header-title
+                        h4.card-title Stacking
+                .card-body
+                    p
+                        | When you have multiple toasts, we default to vertically stacking them in a readable manner.
+                    .toast-container.position-static
+                        .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                            .toast-header
+                                svg.bd-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' preserveaspectratio='xMidYMid slice' focusable='false' role='img')
+                                    rect(width='100%' height='100%' fill='#007aff')
+                                strong.me-auto Bootstrap
+                                small.text-body-secondary just now
+                                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                            .toast-body
+                                | See? Just like this.
+                        .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                            .toast-header
+                                svg.bd-placeholder-img.rounded.me-2(width='20' height='20' xmlns='http://www.w3.org/2000/svg' preserveaspectratio='xMidYMid slice' focusable='false' role='img')
+                                    rect(width='100%' height='100%' fill='#007aff')
+                                strong.me-auto Bootstrap
+                                small.text-body-secondary 2 seconds ago
+                                button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+                            .toast-body
+                                | Heads up, toasts will stack automatically
+        .col-lg-6
+            .card
+                .card-header.d-flex.justify-content-between
+                    .header-title
+                        h4.card-title Custom content
+                .card-body
+                    p
+                        | Customize your toasts by removing sub-components, tweaking them with utilities, or by adding your own
+                        | markup. Here we&rsquo;ve created a simpler toast by removing the default 
+                        code .toast-header
+                        | ,
+                        | adding a custom hide icon from Bootstrap Icons, and using some flexbox utilities to adjust the
+                        | layout.
+                    .toast.show.align-items-center.mb-3(role='alert' aria-live='assertive' aria-atomic='true')
+                        .d-flex
+                            .toast-body
+                                | Hello, world! This is a toast message.
+                            button.btn-close.me-2.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close')
+                    .toast.show(role='alert' aria-live='assertive' aria-atomic='true')
+                        .toast-body
+                            | Hello, world! This is a toast message.
+                            .mt-2.pt-2.border-top
+                                button.btn.btn-primary.btn-sm(type='button') Take action
+                                button.btn.btn-secondary.btn-sm(type='button' data-bs-dismiss='toast') Close
+
+
+
+append scripts
+

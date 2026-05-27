@@ -55,21 +55,19 @@ A modular, framework-free admin dashboard template powered by Node.js, Pug, and 
 
 ### 📊 Dashboards
 *   `index.html` (eCommerce Overview) — Sales metrics, top products, recent orders.
-*   `dashboard-analytics.html` (Traffic & SEO) — Visitor demographics, bounce rates.
 
 ### 🛠️ Core Pages
-*   `users-list.html` — User management grid with status badges.
-*   `user-profile.html` — User settings, activity logs, and security options.
-*   `projects-kanban.html` — Drag-and-drop task management board.
+*   `workspace.html` — User management grid with status badges.
 
 ### 🔐 Authentication
-*   `auth-login.html` — Clean login screen with "Remember Me" toggle.
-*   `auth-register.html` — Registration form with password strength indicator.
-*   `auth-forgot-password.html` — Simple email recovery entry page.
+*   `login.html` — Clean login screen with "Remember Me" toggle.
+*   `register.html` — Registration form with password strength indicator.
+*   `forgot.html` — Simple email recovery entry page.
 
 ### ⚠️ Error Pages
-*   `error-404.html` — Animated "Page Not Found" screen.
-*   `error-500.html` — Internal server error fallback template.
+*   `401.html` — "Unauthorized" screen.
+*   `404.html` — "Page Not Found" screen.
+*   `500.html` — Internal server error fallback template.
 
 
 ## 🛠️ Build & Automation Scripts (`/scripts`)
@@ -78,25 +76,27 @@ The project uses standalone Node.js scripts for asset compilation and developmen
 *   **`scripts/clean.js`**
     *   *Purpose:* Wipes the existing production build directory.
     *   *Triggers:* Runs automatically at the start of every production build to prevent stale asset accumulation.
-*   **`scripts/build-html.js`**
+*   **`scripts/build-pug.js`**
     *   *Purpose:* Compiles source `.pug` views into flat, production-ready `.html` files.
     *   *Details:* Automatically skips components, layouts, and mixins, focusing only on page entry points.
-*   **`scripts/build-css.js`**
+*   **`scripts/build-scss.js`**
     *   *Purpose:* Processes, prefixes, and minifies the user interface stylesheets.
     *   *Details:* Compiles SASS (`.scss`) syntax down to clean CSS, injecting vendor prefixes for cross-browser safety.
-*   **`scripts/bundle-js.js`**
+*   **`scripts/bundle-scripts.js`**
     *   *Purpose:* Optimizes and consolidates custom core dashboard scripts.
     *   *Details:* Combines separate UI modules (sidebar, theme toggler, charts) into a single optimized file.
-*   **`scripts/serve.js`**
+*   **`scripts/start.js`**
     *   *Purpose:* Powers the local development feedback loop.
     *   *Details:* Launches a development server with live-reloading, watching files for instant browser updates.
-*   **`scripts/utils/`**
-    *   *Purpose:* Shared internal pipeline helpers.
-    *   *Components:* Contains common file-system tasks (`file-system.js`) and color-coded terminal status printouts (`logger.js`).
 
 
 ## 🪵 Change Log
 All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
+
+### [v2.0.0] — 2026-05-27
+*   **Updated:** Now using node.js and Pug to compile templates.
+*   **Added:** Bootswatch Themes
+
 
 ### [v1.1.0] — 2026-05-13
 *   **Added:** Dark mode support across all core templates.

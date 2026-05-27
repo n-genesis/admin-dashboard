@@ -1,0 +1,13 @@
+mixin customModal(modalId, modalTitle)
+  .modal.fade(id=modalId, tabindex="-1", aria-labelledby=`${modalId}Label`, aria-hidden="true")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          h5.modal-title(id=`${modalId}Label`)= modalTitle
+          button.btn-close(type="button", data-bs-dismiss="modal", aria-label="Close")
+        .modal-body
+          //- This allows you to pass custom HTML block content into the modal later
+          block
+        .modal-footer
+          button.btn.btn-secondary(type="button", data-bs-dismiss="modal") Close
+          button.btn.btn-primary(type="button") Save changes

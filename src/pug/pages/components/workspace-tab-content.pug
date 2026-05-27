@@ -1,0 +1,711 @@
+.tab-content
+  // Project Tab
+  #projects-tab.tab-pane.active.show(role='tabpanel')
+    h4.mb-2 Projects
+    .row.row-cols-1.row-cols-md-2.g-3
+      #project-items-1.col-md-6
+        .card.h-100.mb-4
+          .card-body
+            .d-flex.mb-3
+              .flex-grow-1.align-items-start
+                div
+                  h6.mb-0.text-muted
+                    i.bi.bi-circle-fill.text-danger.fs-3.align-middle
+                    span.team-date 22 Oct, 2026
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  a.dropdown-item(href='javascript: void(0);') Share
+                  .dropdown-divider
+                  a.dropdown-item.delete-item(href='javascript: void(0);') Delete
+            .mb-4
+              h5.mb-1.team-title Marketing
+              p.text-muted.mb-0.team-description
+                | Every Marketing Plan
+                | Needs
+            .d-flex
+              .avatar-group.float-start.flex-grow-1
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-6' aria-label='Alicia Powell' data-bs-original-title='Alicia Powell')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-1' aria-label='David Heckinger' data-bs-original-title='David Heckinger')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-15' data-bs-original-title='Denny Silva')
+                    .avatar-sm
+                      .avatar-title.rounded-circle.bg-primary
+                        | D
+              // end avatar group
+              .align-self-end
+                span.badge.text-bg-danger.p-2.team-status Pending
+          // end cardbody
+        // end card
+      // end col
+      #project-items-2.col-md-6
+        .card.h-100.mb-4
+          .card-body
+            .d-flex.mb-3
+              .flex-grow-1.align-items-start
+                div
+                  h6.mb-0.text-muted
+                    i.bi.bi-circle-fill.text-success.fs-3.align-middle
+                    span.team-date 20 Oct, 2026
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  a.dropdown-item(href='javascript: void(0);') Share
+                  .dropdown-divider
+                  a.dropdown-item.delete-item(href='javascript:void(0);') Delete
+            .mb-4
+              h5.mb-1.team-title Website Design
+              p.text-muted.mb-0.team-description
+                | Creating the design
+                | and layout of a
+                | website.
+            .d-flex
+              .avatar-group.float-start.flex-grow-1
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-10' aria-label='Kelly Osborn' data-bs-original-title='Kelly Osborn')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-2' aria-label='Dianna Williams' data-bs-original-title='Dianna Williams')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+              // end avatar group
+              .align-self-end
+                span.badge.text-bg-success.p-2.team-status Completed
+          // end cad-body
+        // end card
+      // end col
+      #project-items-3.col-md-6
+        .card.h-100.mb-4
+          .card-body
+            .d-flex.mb-3
+              .flex-grow-1.align-items-start
+                div
+                  h6.mb-0.text-muted
+                    i.bi.bi-circle-fill.text-warning.fs-3.align-middle
+                    span.team-date 21 Oct, 2026
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  a.dropdown-item(href='javascript: void(0);') Share
+                  .dropdown-divider
+                  a.dropdown-item.delete-item(href='javascript: void(0);') Delete
+            .mb-4
+              h5.mb-1.team-title UI / UX Design
+              p.text-muted.mb-0.team-description
+                | Plan and onduct user
+                | research and analysis
+            .d-flex
+              .avatar-group.float-start.flex-grow-1
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-3' aria-label='Judy Newland' data-bs-original-title='Judy Newland')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-5' aria-label='Jeffery Legette' data-bs-original-title='Jeffery Legette')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-6' aria-label='Jose Rosborough' data-bs-original-title='Jose Rosborough')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+              // end avatar group
+              .align-self-end
+                span.badge.text-bg-warning.p-2 Progress
+          // end card-body
+        // end card
+      // end col
+      #project-items-4.col-md-6
+        .card.h-100.mb-4
+          .card-body
+            .d-flex.mb-3
+              .flex-grow-1.align-items-start
+                div
+                  h6.mb-0.text-muted
+                    i.bi.bi-circle-fill.text-danger.fs-3.align-middle
+                    span.team-date 20 Oct, 2026
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  a.dropdown-item(href='javascript: void(0);') Share
+                  .dropdown-divider
+                  a.dropdown-item.delete-item(href='javascript:void(0);') Delete
+            .mb-4
+              h5.mb-1.team-title Testing
+              p.text-muted.mb-0.team-description
+                | The procurement
+                | specifications should
+                | describe
+            .d-flex
+              .avatar-group.float-start.flex-grow-1
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-10' aria-label='Annmarie Paul' data-bs-original-title='Annmarie Paul')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+              // end avatar group
+              .align-self-end
+                span.badge.text-bg-danger.p-2 Pending
+          // end card-body
+        // end card
+      // end col
+      #project-items-5.col-md-6
+        .card.h-100.mb-lg-0
+          .card-body
+            .d-flex.mb-3
+              .flex-grow-1.align-items-start
+                div
+                  h6.mb-0.text-muted
+                    i.bi.bi-circle-fill.text-success.fs-3.align-middle
+                    span.team-date 22 Oct, 2026
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  a.dropdown-item(href='javascript: void(0);') Share
+                  .dropdown-divider
+                  a.dropdown-item.delete-item Delete
+            .mb-4
+              h5.mb-1.team-title Typography
+              p.text-muted.mb-0.team-description
+                | Typography is the
+                | style or appearance
+                | of text.
+            .d-flex
+              .avatar-group.float-start.flex-grow-1
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-1' aria-label='Anita Booker' data-bs-original-title='Anita Booker')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-5' aria-label='Elias Hardage' data-bs-original-title='Elias Hardage')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                .avatar-group-item
+                  a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' value='member-10' aria-label='Rajell Wells' data-bs-original-title='Rajell Wells')
+                    img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+              // end avatar group
+              .align-self-end
+                span.badge.text-bg-success.p-2 Completed
+          // end card body
+        // end card
+      // end col
+    // end row
+    footer.card-footer.d-flex.justify-content-center.justify-content-md-end.bg-transparent
+      nav(aria-label='Task pagination')
+        ul.pagination.pagination-sm.mb-0
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') Next
+    // /.card-footer
+  // Tasks Tab
+  #tasks-tab.tab-pane(role='tabpanel')
+    h4.mb-2 Tasks
+    .row
+      .col-xl-12
+        // Tasks Item Cards
+        article.card.card-task-item.mb-3
+          .card-body
+            .row.flex-column.flex-sm-row.align-items-center
+              // Left: Checkbox & Status
+              .col-auto.d-flex.align-items-center
+                .form-check
+                  input#checkbox1.form-check-input(type='checkbox')
+                  label.form-check-label.ms-1.task-title(for='checkbox1')
+                    | Create a New
+                    | Landing
+              // Center/Right: Description
+              .col.d-flex.justify-content-center.align-items-center
+                .avatar-group.mt-3.mt-xl-0.task-assigne
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Alicia Powell' data-bs-original-title='Alicia Powell')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Dedria Hall' data-bs-original-title='Dedria Hall')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-original-title='Sarah Kerns')
+                      .avatar-sm
+                        .avatar-title.rounded-circle.bg-info S
+                // /.avatar-group
+              // Right: Edit/Delete Icons
+              .col-auto
+                span.badge.rounded-pill.text-bg-warning.me-2 In Progress
+                button.btn.btn-link.p-0.text-body-secondary
+                  i.bi.bi-pencil
+                button.btn.btn-link.p-0.text-danger
+                  i.bi.bi-trash
+          // /.card-body
+          // Footer: Three Buttons
+          footer.card-footer.d-flex.flex-column.flex-sm-row.justify-content-between.align-items-center.gap-2.bg-transparent
+            div
+              span Tasks item description
+            div
+              button.btn.btn-sm.btn-outline-primary Assign
+              button.btn.btn-sm.btn-outline-secondary Due Date
+              button.btn.btn-sm.btn-outline-success Details
+          // /.card-footer
+        // /.card-task-item
+        article.card.card-task-item.mb-3
+          .card-body
+            .row.flex-column.flex-sm-row.align-items-center
+              // Left: Checkbox & Status
+              .col-auto.d-flex.align-items-center
+                .form-check
+                  input#checkbox2.form-check-input(type='checkbox')
+                  label.form-check-label.ms-1.task-title(for='checkbox2')
+                    | Create a Layout
+                    | Design
+              // Center/Right: Description
+              .col.d-flex.justify-content-center.align-items-center
+                .avatar-group.my-2.my-sm-0
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Sherrell Soto')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Jake Johnson' data-bs-original-title='Jake Jackson')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Jessica Ray' data-bs-original-title='Jessica Ray')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  // /.avatar-group-item
+                // /.avatar-group
+              // Right: Edit/Delete Icons
+              .col-auto
+                span.badge.rounded-pill.text-bg-warning.me-2 In Progress
+                button.btn.btn-link.p-0.text-body-secondary
+                  i.bi.bi-pencil
+                button.btn.btn-link.p-0.text-danger
+                  i.bi.bi-trash
+          // /.card-body
+          // Footer: Three Buttons
+          footer.card-footer.d-flex.flex-column.flex-sm-row.justify-content-between.align-items-center.gap-2.bg-transparent
+            div
+              span Tasks item description
+            div
+              button.btn.btn-sm.btn-outline-primary Assign
+              button.btn.btn-sm.btn-outline-secondary Due Date
+              button.btn.btn-sm.btn-outline-success Details
+          // /.card-footer
+        // /.card-task-item
+        article.card.card-task-item.mb-3
+          .card-body
+            .row.flex-column.flex-sm-row.align-items-center
+              // Left: Checkbox & Status
+              .col-auto.d-flex.align-items-center
+                .form-check
+                  input#checkbox3.form-check-input(type='checkbox')
+                  label.form-check-label.ms-1.task-title(for='checkbox3')
+                    | Create a Blog
+                    | Template UI
+              // Center/Right: Avatar Images
+              .col.d-flex.justify-content-center.align-items-center
+                .avatar-group.mt-3.mt-xl-0
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Scott Edward' data-bs-original-title='Scott Edward')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-original-title='Dante Jones')
+                      .avatar-sm
+                        .avatar-title.rounded-circle.bg-primary D
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='JR Smith' data-bs-original-title='JR Smith')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Richard Jackson' data-bs-original-title='Richard Jackson')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                // /.avatar-group
+              // Right: Edit/Delete Icons
+              .col-auto
+                span.badge.rounded-pill.text-bg-danger.me-2 Pending
+                button.btn.btn-link.p-0.text-body-secondary
+                  i.bi.bi-pencil
+                button.btn.btn-link.p-0.text-danger
+                  i.bi.bi-trash
+          // /.card-body
+          // Footer: Three Buttons
+          footer.card-footer.d-flex.flex-column.flex-sm-row.justify-content-between.align-items-center.gap-2.bg-transparent
+            div
+              span Tasks item description
+            div
+              button.btn.btn-sm.btn-outline-primary Assign
+              button.btn.btn-sm.btn-outline-secondary Due Date
+              button.btn.btn-sm.btn-outline-success Details
+          // /.card-footer
+        // /.card-task-item
+        article.card.card-task-item.mb-3
+          .card-body
+            .row.flex-column.flex-sm-row.align-items-center
+              // Left: Checkbox & Status
+              .col-auto.d-flex.align-items-center
+                .form-check
+                  input#checkbox4.form-check-input(type='checkbox' checked='')
+                  label.form-check-label.ms-1.task-title(for='checkbox4')
+                    | Chat App
+                    | Pages
+              // Center/Right: Avatar Images
+              .col.d-flex.justify-content-center.align-items-center
+                .avatar-group.mt-3.mt-xl-0
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Annmarie Paul' data-bs-original-title='Annmarie Paul')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                // /.avatar-group
+              // Right: Edit/Delete Icons
+              .col-auto
+                span.badge.rounded-pill.text-bg-success.me-2 Completed
+                button.btn.btn-link.p-0.text-body-secondary
+                  i.bi.bi-pencil
+                button.btn.btn-link.p-0.text-danger
+                  i.bi.bi-trash
+          // /.card-body
+          // Footer: Three Buttons
+          footer.card-footer.d-flex.flex-column.flex-sm-row.justify-content-between.align-items-center.gap-2.bg-transparent
+            div
+              span Tasks item description
+            div
+              button.btn.btn-sm.btn-outline-primary Assign
+              button.btn.btn-sm.btn-outline-secondary Due Date
+              button.btn.btn-sm.btn-outline-success Details
+          // /.card-footer
+        // /.card-task-item
+        article.card.card-task-item.mb-3
+          .card-body
+            .row.flex-column.flex-sm-row.align-items-center
+              // Left: Checkbox & Status
+              .col-auto.d-flex.align-items-center
+                .form-check
+                  input#checkbox5.form-check-input(type='checkbox')
+                  label.form-check-label.ms-1.task-title(for='checkbox5')
+                    | Components
+                    | Pages
+              // Center/Right: Avatar Images
+              .col.d-flex.justify-content-center.align-items-center
+                .avatar-group.mt-3.mt-xl-0
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Erica Williams' data-bs-original-title='Erica Williams')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Richard Millar' data-bs-original-title='Richard Millar')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Tama Turner' data-bs-original-title='Tama Turner')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                // /.avatar-group
+              // Right: Edit/Delete Icons
+              .col-auto
+                span.badge.rounded-pill.text-bg-danger.me-2 Pending
+                button.btn.btn-link.p-0.text-body-secondary
+                  i.bi.bi-pencil
+                button.btn.btn-link.p-0.text-danger
+                  i.bi.bi-trash
+          // /.card-body
+          // Footer: Three Buttons
+          footer.card-footer.d-flex.flex-column.flex-sm-row.justify-content-between.align-items-center.gap-2.bg-transparent
+            div
+              span Tasks item description
+            div
+              button.btn.btn-sm.btn-outline-primary Assign
+              button.btn.btn-sm.btn-outline-secondary Due Date
+              button.btn.btn-sm.btn-outline-success Details
+          // /.card-footer
+        // /.card-task-item
+        article.card.card-task-item.mb-3
+          .card-body
+            .row.flex-column.flex-sm-row.align-items-center
+              // Left: Checkbox & Status
+              .col-auto.d-flex.align-items-center
+                .form-check
+                  input#checkbox6.form-check-input(type='checkbox' checked='')
+                  label.form-check-label.ms-1.task-title(for='checkbox6')
+                    | Create a Gallery
+                    | Pages
+              // Center/Right: Avatar Images
+              .col.d-flex.justify-content-center.align-items-center
+                .avatar-group.mt-3.mt-xl-0
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='John Walker' data-bs-original-title='John Walker')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Shell Garcia' data-bs-original-title='Shell Garcia')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='Avatar Image')
+                // /.avatar-group
+              // Right: Edit/Delete Icons
+              .col-auto
+                span.badge.rounded-pill.text-bg-success.me-2 Completed
+                button.btn.btn-link.p-0.text-body-secondary
+                  i.bi.bi-pencil
+                button.btn.btn-link.p-0.text-danger
+                  i.bi.bi-trash
+          // /.card-body
+          // Footer: Three Buttons
+          footer.card-footer.d-flex.flex-column.flex-sm-row.justify-content-between.align-items-center.gap-2.bg-transparent
+            div
+              span Tasks item description
+            div
+              button.btn.btn-sm.btn-outline-primary Assign
+              button.btn.btn-sm.btn-outline-secondary Due Date
+              button.btn.btn-sm.btn-outline-success Details
+          // /.card-footer
+        // /.card-task-item
+      // end col
+    // end row
+    footer.card-footer.d-flex.justify-content-center.justify-content-md-end.bg-transparent
+      nav(aria-label='Task pagination')
+        ul.pagination.pagination-sm.mb-0
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') Next
+    // /.card-footer
+  // Team Tab
+  #team-tab.tab-pane(role='tabpanel')
+    h4.mb-2 Team
+    .row
+      #team-1.col-xl-4.col-md-6
+        .card.mb-4
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Rebeka Soto' data-bs-original-title='Rebeka Soto')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Joe Jones' data-bs-original-title='Joe Jones')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-labe='Denny Silva' data-bs-original-title='Denny Silva')
+                      .avatar-sm
+                        .avatar-title.rounded-circle.bg-primary
+                          | D
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(data-id='1' data-bs-toggle='modal' data-bs-target='.bs-add-leave-team' href='javascript: void(0);')
+                    | Leave Team
+              // end dropdown
+            div
+              h5.mb-1 Marketing
+              p.text-muted.mb-0 4 Projects
+        // end card
+      #team-2.col-xl-4.col-md-6
+        .card.mb-4
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Mark Burke' data-bs-original-title='Mark Burke')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Shea Young' data-bs-original-title='Shea Young')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Julia Halsey' data-bs-original-title='Julia Halsey')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Austin Canada' data-bs-original-title='Austin Canada')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Denny Silva' data-bs-original-title='Denny Silva')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(data-id='2' data-bs-toggle='modal' data-bs-target='.bs-add-leave-team' href='javascript: void(0);')
+                    | Leave
+                    | Team
+              // end dropdown
+            div
+              h5.mb-1 Blog Template
+              p.text-muted.mb-0 5 Projects
+        // end card
+      #team-3.col-xl-4.col-md-6
+        .card.mb-4
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Mark Burke' data-bs-original-title='Mark Burke')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Julia Halsey' data-bs-original-title='Julia Halsey')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Gorge Keller' data-bs-original-title='Gorge Keller')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Boe Dunkin' data-bs-original-title='Boe Dunkin')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(href='javascript: void(0);')
+                    | Leave
+                    | Team
+              // end dropdown
+            div
+              h5.mb-1 Multipurpose Landing
+              p.text-muted.mb-0 2 Projects
+        // end card
+      #team-4.col-xl-4.col-md-6
+        .card.mb-4
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='William Zawacki' data-bs-original-title='William Zawacki')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Zack Undertoe' data-bs-original-title='Zack Undertoe')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Hattie Bustos' data-bs-original-title='Hattie Bustos')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(data-id='4' data-bs-toggle='modal' data-bs-target='.bs-add-leave-team' href='javascript: void(0);')
+                    | Leave
+                    | Team
+              // end dropdown
+            div
+              h5.mb-1 Brand Logo Design
+              p.text-muted.mb-0 5 Projects
+        // end card
+      #team-5.col-xl-4.col-md-6
+        .card.mb-4
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-original-title='James Ross')
+                      .avatar-sm
+                        .avatar-title.rounded-circle.bg-purple J
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Jill King' data-bs-original-title='Jill King')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Dan Gibson' data-bs-original-title='Dan Gibson')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(href='javascript: void(0);')
+                    | Leave Team
+              // end dropdown
+            div
+              h5.mb-1 Landing Page
+              p.text-muted.mb-0 3 Projects
+        // end card
+      #team-6.col-xl-4.col-md-6
+        .card.mb-4
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Star Tyler' data-bs-original-title='Star Tyler')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Brittany Hill' data-bs-original-title='Brittany Hill')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-original-title='Denny Silva')
+                      .avatar-sm
+                        .avatar-title.rounded-circle.bg-primary
+                          | D
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Blake Fuller' data-bs-original-title='Blake Fuller')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='#') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(data-id='6' data-bs-toggle='modal' data-bs-target='.bs-add-leave-team' href='javascript: void(0);')
+                    | Leave
+                    | Team
+              // end dropdown
+            div
+              h5.mb-1 New Create Admin UI
+              p.text-muted.mb-0 1 Projects
+        // end card
+      #team-7.col-xl-4.col-md-6
+        .card.mb-0
+          .card-body
+            .d-flex.mb-4
+              .flex-grow-1.align-items-start
+                .avatar-group.float-start.flex-grow-1
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Abel Owen' data-bs-original-title='Abel Owen')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                  .avatar-group-item
+                    a.d-inline-block(href='javascript: void(0);' data-bs-toggle='tooltip' data-bs-placement='top' aria-label='Chlive Haiven' data-bs-original-title='Chlive Haiven')
+                      img.rounded-circle.avatar-sm(src='assets/images/user.png' alt='')
+                // end avatar group
+              .dropdown.ms-2
+                a.dropdown-toggle.text-muted(href='#' data-bs-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                  i.bi.bi-three-dots
+                .dropdown-menu.dropdown-menu-end
+                  a.dropdown-item(href='javascript: void(0);') Edit
+                  .dropdown-divider
+                  a.dropdown-item.text-danger.leave-team(href='javascript: void(0);')
+                    | Leave
+                    | Team
+              // end dropdown
+            div
+              h5.mb-1 Creating Dashboard UI Kit
+              p.text-muted.mb-0 6 Projects
+        // end card
+    // end row
+    footer.card-footer.d-flex.justify-content-center.justify-content-md-end.bg-transparent
+      nav(aria-label='Task pagination')
+        ul.pagination.pagination-sm.mb-0
+          li.page-item.disabled
+            a.page-link(href='#') Previous
+          li.page-item.active
+            a.page-link(href='#') 1
+          li.page-item
+            a.page-link(href='#') 2
+          li.page-item
+            a.page-link(href='#') Next
+

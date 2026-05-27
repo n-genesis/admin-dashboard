@@ -1,0 +1,19 @@
+extends ../layouts/error.pug
+
+block config
+    - var pageTitle = '404 - Page Not Found';
+    - var index = false;
+    - var current_page = '404';
+
+prepend css
+
+block content
+
+    // 404 Error
+    .col-lg-6
+        .text-center.mt-4
+            img.mb-4.img-fluid(src='assets/images/error/404-error.png')
+            p.lead This requested URL was not found on this server.
+            a(href='index.html')
+                i.bi.bi-arrow-left.me-1
+                | Return to Dashboard

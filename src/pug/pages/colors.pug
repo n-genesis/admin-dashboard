@@ -1,0 +1,139 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var pageTitle = 'Colors';
+    - var index = false;
+    - var current_page = 'colors';
+    
+prepend css
+
+block content
+
+  // page header
+  include includes/page-header.pug
+
+  // Colors
+  .row.gy-3
+    // Background Colors
+    .col-12
+      .card.mb-3
+        .card-header.d-flex.justify-content-between
+          .header-title
+            h4.card-title Background Colors
+        .card-body
+          p
+            | Similar to the contextual text color classes, easily set the background of an element to any
+            | contextual class. Anchor components will darken on hover, just like the text classes. Background
+            | utilities 
+            strong
+              | do not set 
+              code color
+            | , so in some cases you&rsquo;ll want to use
+            code .text-*
+            |  utilities.
+          .row.mt-4
+            .col-lg-2.col-md-6.text-center
+              p.bg-primary.pt-5.pb-5.text-center.rounded
+              h6 Primary
+            .col-lg-2.col-md-6.text-center
+              p.bg-secondary.pt-5.pb-5.text-center.rounded
+              h6 Secondary
+            .col-lg-2.col-md-6.text-center
+              p.bg-success.pt-5.pb-5.text-center.rounded
+              h6 Success
+            .col-lg-2.col-md-6.text-center
+              p.bg-danger.pt-5.pb-5.text-center.rounded
+              h6 Danger
+            .col-lg-2.col-md-6.text-center
+              p.bg-warning.pt-5.pb-5.text-center.rounded
+              h6 Warning
+            .col-lg-2.col-md-6.text-center
+              p.bg-info.pt-5.pb-5.text-center.rounded
+              h6 Info
+            .col-lg-2.col-md-6.text-center.mt-4
+              p.bg-light.pt-5.pb-5.text-center.rounded
+              h6 Light
+            .col-lg-2.col-md-6.text-center.mt-4
+              p.bg-dark.pt-5.pb-5.text-center.rounded
+              h6 Dark
+    // Text Colors
+    .col-lg-12
+      .card
+        .card-header.d-flex.justify-content-between
+          .header-title
+            h4.card-title Text Color
+        .card-body
+          p
+            | Color and background helpers combine the power of our 
+            code .text-*
+              |  utilities
+            |  and 
+            code .bg-*
+              |  utilities
+            |  in one class.
+          .row
+            .col-lg-3
+              p.text-primary .text-primary
+              p.text-primary-emphasis .text-primary-emphasis
+              p.text-secondary .text-secondary
+              p.text-secondary-emphasis .text-secondary-emphasis
+              p.text-success .text-success
+              p.text-success-emphasis .text-success-emphasis
+            .col-lg-3
+              p.text-danger .text-danger
+              p.text-danger-emphasis .text-danger-emphasis
+              p.text-warning.bg-dark .text-warning
+              p.text-warning-emphasis .text-warning-emphasis
+              p.text-info.bg-dark .text-info
+              p.text-info-emphasis .text-info-emphasis
+            .col-lg-3
+              p.text-light.bg-dark .text-light
+              p.text-light-emphasis .text-light-emphasis
+              p.text-dark.bg-white .text-dark
+              p.text-dark-emphasis .text-dark-emphasis
+              p.text-body .text-body
+              p.text-body-emphasis .text-body-emphasis
+            .col-lg-3
+              p.text-body-secondary .text-body-secondary
+              p.text-body-tertiary .text-body-tertiary
+              p.text-black.bg-white .text-black
+              p.text-white.bg-dark .text-white
+              p.text-black-50.bg-white .text-black-50
+              p.text-white-50.bg-dark .text-white-50
+    // Link Colors
+    .col-lg-6
+      .card
+        .card-header.d-flex.justify-content-between
+          .header-title
+            h4.card-title Lik Colors
+        .card-body
+          p
+            | Contextual text classes also work well on anchors with the provided hover and focus states.
+            strong
+              | Note that the 
+              code .text-white
+              |  and 
+              code .text-muted
+              |  class has no additional
+              |                         link styling beyond underline.
+          p
+            a.link-primary(href='#') Primary link
+          p
+            a.link-secondary(href='#') Secondary link
+          p
+            a.link-success(href='#') Success link
+          p
+            a.link-danger(href='#') Danger link
+          p
+            a.link-warning(href='#') Warning link
+          p
+            a.link-info(href='#') Info link
+          p
+            a.link-light.bg-dark(href='#') Light link
+          p
+            a.link-dark(href='#') Dark link
+          p.mb-0
+            a.link-body-emphasis(href='#') Emphasis link
+
+append scripts
+

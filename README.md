@@ -24,9 +24,9 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Template with swipe
 
 ## 📝 Page Templates
 - Dashboard
-- User Profile
+- Workspace
 - Blank Page
-- Folder & Files (simple cards for directory list)
+- Directory (simple cards for directory list)
 - Authentication Page
     - Login, register, and forgot password
 - Error Pages
@@ -36,10 +36,11 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Template with swipe
 ## 🚀 Quick Start
 To begin using this template, choose one of the following options to get started:
 
-#### [Download the latest release on N-Gen Design](https://ngendesign.com/template.php)
+### Download
+Download the latest release at [N-Gen Design](https://ngendesign.com/template.php) webiste.
 
-#### Clone the repo:
-Open your terminal/cmd and navigate to the directory you want to clone to project and run:  
+### Clone the repo:
+Open your terminal/cmd and navigate to the directory you want to clone to project and run the command:  
 
 ```
 git clone https://github.com/n-genesis/ngen-admin-dashboard.git
@@ -78,20 +79,20 @@ For comprehensive code insights, deep dives, and specific pipeline implementatio
 
 Have a bug or an issue with this template? [Open a new issue](#) here on GitHub or leave a comment on the [template overview page on the N-Gen Design website](#).
 
-## Custom Builds
-
-You can hire N-Gen Design to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[Our services page](#)**.
 
 ## 📝 License
 
-Copyright 2025 N-Gen Design This project is open-source software licensed under the **[MIT License]**(./LICENSE).  
+Copyright 2025 N-Gen Design This project is open-source software licensed under the [MIT License](./LICENSE).  
+
 
 ## 🎗️ Credits & Attribution
 
 This template is built using open-source packages, asset frameworks, and community design resources.
 
+
 ### 📦 Third-Party Libraries
 *   [Pug Engine](https://pugjs.org) — Structural HTML template generation.
+
 
 ### 🎨 Design References
 *   [Simple Sidebar](https://github.com/startbootstrap/startbootstrap-simple-sidebar) created by Start Bootstrap is an off canvas sidebar navigation template.

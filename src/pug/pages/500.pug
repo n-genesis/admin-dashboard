@@ -1,0 +1,19 @@
+extends ../layouts/error.pug
+
+block config
+    - var pageTitle = '500 - Something Went Wrong';
+    - var index = false;
+    - var current_page = '500';
+
+prepend css
+
+block content
+
+    // 500 Error
+    .col-lg-6
+        .text-center.mt-4
+            h1.display-1 500
+            p.lead Internal Server Error
+            a(href='./')
+                i.bi.bi-arrow-left.me-1
+                | Return to Dashboard
