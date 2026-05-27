@@ -37,7 +37,7 @@ files.forEach((file) => {
 });
 
 function _processFile(filePath) {
-    if (!filePath.match(/include/) && !filePath.match(/mixin/) && !filePath.match(/\/pug\/layouts\//) && !filePath.match(/\/pug\/components\//)) {
+    if (!filePath.match(/include/) && !filePath.match(/mixin/) && !filePath.match(/\/pug\/layouts\//) && !filePath.match(/\/pug\/pages\/components\//)) {
         compilePugToHtml(filePath);
     }
 }
