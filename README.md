@@ -34,7 +34,10 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Template with swipe
 To begin using this template, choose one of the following options to get started:
 
 ### Download
-Download the latest release at [N-Gen Design](https://ngendesign.com/template.php) webiste.
+You can download a zipped file of the repo by click the green "Code" button above and selecting "Download ZIP".  
+
+![N-Gen Admin Dashboard Preview](./src/assets/github-zip-download.png)
+
 
 ### Clone the repo:
 Open your terminal/cmd and navigate to the directory you want to clone to project and run the command:  
