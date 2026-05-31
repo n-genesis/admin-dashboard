@@ -1,5 +1,5 @@
 # N-Gen Admin Dashboard | Project Documentation & Overview
-A modular, framework-free admin dashboard template powered by Node.js, Pug, and custom build scripts.
+A modular, framework-free admin dashboard theme powered by Node.js, Pug, [Bootswatch](https://bootswatch.com/), and custom scripts.
 
 ## ⚙️ Tech Stack & Components
 *   **Framework:** Bootstrap 5
