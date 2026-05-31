@@ -46,7 +46,7 @@ Open your terminal/cmd and navigate to the directory you want to clone to projec
 git clone https://github.com/n-genesis/ngen-admin-dashboard.git
 ```
 
-Once you've downloading your copy, you can easily edit the HTML, CSS, and JavaScirpt files inside the `dist` directory. All the files here are the only ones you need to edit to make style and layout changes. You can ignore everything else if you don't wan't to get technical and what not. To checkout your the changes you make to the code, you can open the `index.html` file in your web browser.
+Once you've downloading your copy, you can easily edit the HTML, CSS, and JavaScirpt files inside the `dist` directory. These are the only files you need to edit to make style and layout changes. You can ignore everything else if you don't wan't to get technical and what not. To checkout your the changes you make to the code, you can open the `index.html` file in your web browser.
 
 
 ## ⚙️ Advanced Usage
