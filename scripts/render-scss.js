@@ -21,17 +21,22 @@ export function renderSCSS() {
     const outputCssFile = path.join(destinationDir, 'bootstrap.css');
 
     try {
+        // Silence specific deprecation warnings related to SASS features
         const resultBoot = compile(sourcePath, {
             loadPaths: ['node_modules'],
             style: 'expanded', // or 'compressed', 'compact', 'nested'
             silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'if-function'],
         });
+
         writeFileSync(outputCssFile, resultBoot.css.toString());
+
         console.log(`Bootstrap CSS successfully compiled and saved to: ${outputCssFile}`);
+
     } catch (error) {
         console.error('Error compiling Bootstrap SASS:', error);
     }
 
+    // Stylesheet path and destination path for compiled CSS file
     const stylesPath = path.join(__dirname, '../src/scss', 'styles.scss');
     const destPath = path.resolve(__dirname, '../dist/css/styles.css');
     
