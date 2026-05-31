@@ -79,10 +79,10 @@ The project uses standalone Node.js scripts for asset compilation and developmen
 *   **`scripts/build-pug.js`**
     *   *Purpose:* Compiles source `.pug` views into flat, production-ready `.html` files.
     *   *Details:* Automatically skips components, layouts, and mixins, focusing only on page entry points.
-*   **`scripts/build-scss.js`**
+*   **`scripts/render-scss.js`**
     *   *Purpose:* Processes, prefixes, and minifies the user interface stylesheets.
     *   *Details:* Compiles SASS (`.scss`) syntax down to clean CSS, injecting vendor prefixes for cross-browser safety.
-*   **`scripts/bundle-scripts.js`**
+*   **`scripts/render-scripts.js`**
     *   *Purpose:* Optimizes and consolidates custom core dashboard scripts.
     *   *Details:* Combines separate UI modules (sidebar, theme toggler, charts) into a single optimized file.
 *   **`scripts/start.js`**
