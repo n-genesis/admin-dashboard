@@ -93,6 +93,9 @@ The project uses standalone Node.js scripts for asset compilation and developmen
 ## 🪵 Change Log
 All the notable changes to the template will be listed here. Most change will be style, HTML, or JavaScript updates. If you have any suggestion feel free to suggest them.
 
+### [v2.0.0] — 2026-06-08
+*   **Updated:** Changed `.pug` file names to reflect sub-pages (e.g. `components-modals.pug`).
+
 ### [v2.0.0] — 2026-05-27
 *   **Updated:** Now using node.js and Pug to compile templates.
 *   **Added:** Bootswatch Themes
