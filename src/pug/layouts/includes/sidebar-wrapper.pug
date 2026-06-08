@@ -14,12 +14,12 @@ aside#sidebar-wrapper.border-end
 
                     |  Dashboard
             li
-                a.nav-link(href="directory.html" class=(current_page === 'directory' ? 'active' : 'link-body-emphasis'))
+                a.nav-link(href="page-directory.html" class=(current_page === 'directory' ? 'active' : 'link-body-emphasis'))
                     i.bi.bi-folder2.me-1
 
                     |  Directory
             li
-                a.nav-link(href="workspace.html" class=(current_page === 'worspace' ? 'active' : 'link-body-emphasis'))
+                a.nav-link(href="page-workspace.html" class=(current_page === 'worspace' ? 'active' : 'link-body-emphasis'))
                     i.bi.bi-person-workspace.me-1
                     |  Workspace
             li.nav-item
@@ -34,19 +34,19 @@ aside#sidebar-wrapper.border-end
                 #submenu1.collapse(class=(['avatars', 'alerts', 'buttons', 'cards', 'forms', 'modals', 'toasts' ].includes(current_page) ? 'show' : ''), data-bs-parent="#sidebar-menu")
                     ul.nav.flex-column.ms-4
                         li.nav-item
-                            a.nav-link.small(class=(['avatars'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="avatars.html") Avatars
+                            a.nav-link.small(class=(['avatars'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-avatars.html") Avatars
                         li.nav-item
-                            a.nav-link.small(class=(['alerts'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="alerts.html") Alerts
+                            a.nav-link.small(class=(['alerts'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-alerts.html") Alerts
                         li.nav-item
-                            a.nav-link.small(class=(['buttons'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="buttons.html") Buttons
+                            a.nav-link.small(class=(['buttons'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-buttons.html") Buttons
                         li.nav-item
-                            a.nav-link.small(class=(['cards'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="cards.html") Cards
+                            a.nav-link.small(class=(['cards'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-cards.html") Cards
                         li.nav-item
-                            a.nav-link.small(class=(['forms'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="forms.html") Forms
+                            a.nav-link.small(class=(['forms'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-forms.html") Forms
                         li.nav-item
-                            a.nav-link.small(class=(['modals'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="modals.html") Modals
+                            a.nav-link.small(class=(['modals'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-modals.html") Modals
                         li.nav-item
-                            a.nav-link.small(class=(['toasts'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="toasts.html") Toasts
+                            a.nav-link.small(class=(['toasts'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="components-toasts.html") Toasts
             li.nav-item
                 // Parent Link/Trigger
                 a.nav-link.d-flex.justify-content-between.align-items-center.link-body-emphasis(data-bs-toggle="collapse", href="#submenu2", role="button", aria-expanded=(['colors', 'typography', 'images'].includes(current_page) ? 'true' : 'false'), aria-controls="submenu2")
@@ -59,13 +59,13 @@ aside#sidebar-wrapper.border-end
                 #submenu2.collapse(class=(['colors', 'typography', 'images'].includes(current_page) ? 'show' : ''), data-bs-parent="#sidebar-menu")
                     ul.nav.flex-column.ms-4
                         li.nav-item
-                            a.nav-link.small(class=(['colors'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="colors.html") Colors
+                            a.nav-link.small(class=(['colors'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="utilities-colors.html") Colors
                         li.nav-item
-                            a.nav-link.small(class=(['typography'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="typography.html") Typography
+                            a.nav-link.small(class=(['typography'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="utilities-typography.html") Typography
                         li.nav-item
-                            a.nav-link.small(class=(['images'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="images.html") Images             
+                            a.nav-link.small(class=(['images'].includes(current_page) ? 'active' : 'link-body-emphasis'), href="utilities-images.html") Images             
             li
-                a.nav-link(href="blank-page.html" class=(current_page === 'blank-page' ? 'active' : 'link-body-emphasis'))
+                a.nav-link(href="page-blank.html" class=(current_page === 'blank-page' ? 'active' : 'link-body-emphasis'))
                     i.bi.bi-file-earmark-text.me-1
                     |  Blank Page
             li.nav-item
@@ -80,11 +80,11 @@ aside#sidebar-wrapper.border-end
                 #submenu3.collapse(data-bs-parent="#sidebar-menu")
                     ul.nav.flex-column.ms-4
                         li.nav-item
-                            a.nav-link.small.link-body-emphasis(href="401.html") 401 Page
+                            a.nav-link.small.link-body-emphasis(href="error-401.html") 401 Page
                         li.nav-item
-                            a.nav-link.small.link-body-emphasis(href="404.html") 404 Page
+                            a.nav-link.small.link-body-emphasis(href="error-404.html") 404 Page
                         li.nav-item
-                            a.nav-link.small.link-body-emphasis(href="500.html") 500 Page
+                            a.nav-link.small.link-body-emphasis(href="error-500.html") 500 Page
             li.nav-item
                 // Parent Link/Trigger
                 a.nav-link.d-flex.justify-content-between.align-items-center.link-body-emphasis(data-bs-toggle="collapse", href="#submenu4", role="button", aria-expanded="false", aria-controls="submenu4")
@@ -96,15 +96,14 @@ aside#sidebar-wrapper.border-end
                 #submenu4.collapse(data-bs-parent="#sidebar-menu")
                     ul.nav.flex-column.ms-4
                         li.nav-item
-                            a.nav-link.small.link-body-emphasis(href="login.html") Login
+                            a.nav-link.small.link-body-emphasis(href="auth-login.html") Login
                         li.nav-item
-                            a.nav-link.small.link-body-emphasis(href="register.html") Register
+                            a.nav-link.small.link-body-emphasis(href="auth-register.html") Register
                         li.nav-item
-                            a.nav-link.small.link-body-emphasis(href="forgot.html") Forgot Password
+                            a.nav-link.small.link-body-emphasis(href="auth-forgot.html") Forgot Password
             li
                 a.nav-link.link-body-emphasis(href="#", data-bs-toggle="modal", data-bs-target="#exampleModal")
                     i.bi.bi-copy.me-1
-
                     |  Modal
 
             // li with border-top instead of hr

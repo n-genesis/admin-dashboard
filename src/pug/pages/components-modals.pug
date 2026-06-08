@@ -18,12 +18,16 @@ block content
             // Card Examples
             article.card
                 header.card-header
-                    h4.mb-0.fw-lighter.flex-grow-1 Styles Modals
+                    .d-flex.justify-content-between.align-items-center
+                        h4.mb-0.fw-lighter.flex-grow-1 Styles Modals
+                        a.btn.btn-outline-primary.me-2(href="#", data-bs-toggle="modal", data-bs-target="#exampleModal")
+                            i.bi.bi-copy.me-1
+                            |  Modal Example
                 .card-body
                     p
-                        | The Modal component is a dialog box/popup window that is displayed on top of the current page:
+                        | The Modal component is a dialog box/popup window that is displayed on top of the current page. Click the "Modal Example" button above to see an example.
                     .row
-                        .col-12
+                        .col-lg-6
                             // Static Preview Container
                             .modal(tabindex='-1' style='display: block; position: static;')
                                 .modal-dialog
@@ -37,7 +41,7 @@ block content
                                             button.btn.btn-secondary(type='button') Secondary
                                             button.btn.btn-primary(type='button') Primary
                         // Styled Rounded
-                        .col-12
+                        .col-lg-6
                             .modal(tabindex='-1' style='display: block; position: static;')
                                 .modal-dialog
                                     .modal-content.rounded-4.shadow
@@ -53,7 +57,7 @@ block content
                                             button.btn.btn-lg.btn-primary(type='button') Save changes
                                             button.btn.btn-lg.btn-secondary(type='button' data-bs-dismiss='modal') Close
                         // Login Form
-                        .col-12
+                        .col-lg-6
                             .modal(tabindex='-1' style='display: block; position: static;')
                                 .modal-dialog
                                     .modal-content.rounded-4.shadow
