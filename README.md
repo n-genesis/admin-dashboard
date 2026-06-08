@@ -24,6 +24,9 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Theme with swipe le
 - Workspace
 - Blank Page
 - Directory (simple cards for directory list)
+- Comonents Pages (Alerts, Buttons, & Toasts)
+- Utilites Pages
+    - Images, Typographyand, and Images
 - Authentication Page
     - Login, register, and forgot password
 - Error Pages
