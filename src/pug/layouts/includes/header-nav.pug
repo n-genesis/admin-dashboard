@@ -17,6 +17,10 @@ nav#header-nav.navbar.navbar-expand-lg.bg-body-tertiary.border-bottom.border-sta
     // Nabar Items
     #navbar-content.collapse.navbar-collapse
       ul.navbar-nav.ms-auto.mt-2.mt-lg-0
+        li
+          a.btn.btn-info(href='app.html') 
+            | App Page
+            i.bi.bi-box-arrow-up-right
         li.nav-item.active
           a.nav-link(href="!#") Home
         li.nav-item
@@ -29,7 +33,6 @@ nav#header-nav.navbar.navbar-expand-lg.bg-body-tertiary.border-bottom.border-sta
             aria-haspopup="true" 
             aria-expanded="false"
           ) Dropdown
-
           // Dropdown
           .dropdown-menu.dropdown-menu-end(aria-labelledby="dropdownUser")
             h6.dropdown-header
