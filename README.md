@@ -31,7 +31,8 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Theme with swipe le
     - Login, register, and forgot password
 - Error Pages
     - 401, 404, and 500
-- ⭐ (New) App.html (Example landing page)
+- ⭐ (New) Pages
+    - App Page (Example landing page)
 
 
 ## 🚀 Quick Start
