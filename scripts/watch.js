@@ -70,21 +70,20 @@ function _handlePug(filePath, watchEvent) {
     const destPath = filePath.replace('src/pug/pages', 'dist').replace(/\.pug$/, '.html');
 
     if (watchEvent === 'change') {
-        if (filePath.match(/includes|mixins|\/pug\/layouts\/|\/pug\/components\//)) {
+        if (filePath.match(/includes|mixins|\/pug\/layouts\/|\/pug\/pages\//)) {
             return _renderAllPug();
         }
-        return compilePugToHtml(filePath);
+        // return compilePugToHtml(filePath);
     }
 
-    if (!filePath.match(/includes|mixins|\/pug\/layouts\/|\/pug\/components\//)) {
-        return compilePugToHtml(filePath);
-    }
 }
 
 function _renderAllPug() {
     console.info('### INFO: Rendering All');
     each(allPugFiles, (value, filePath) => {
-        compilePugToHtml(filePath);
+        if (!filePath.match(/include/) && !filePath.match(/mixin/) && !filePath.match(/\/pug\/layouts\//) && !filePath.match(/\/pug\/pages\/components\//)) {
+            compilePugToHtml(filePath);
+        }
     });
 }
 
