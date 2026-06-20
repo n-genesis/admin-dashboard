@@ -1,0 +1,79 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Project Page
+    //- Favicon
+    link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+    //- Bootstrap 5 CSS
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css")
+    //- Bootstrap Icons CDN (Optional but recommended for icons)
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css")
+  body
+    // Navigation
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      .container
+        a.navbar-brand(href="#") ProjectName
+        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav")
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto
+            li.nav-item: a.nav-link(href="#hero") Home
+            li.nav-item: a.nav-link(href="#features") Features
+            li.nav-item: a.nav-link(href="#contact") Contact
+
+    // Hero Section
+    header#hero.bg-light.text-center.py-5.mt-5
+      .container.py-5
+        h1.display-4.fw-bold Modern Node & Pug Template
+        p.lead.text-muted.mb-4 A simple, clean, and responsive Bootstrap 5 landing page for presentations.
+        a.btn.btn-warning.btn-lg.me-2(href="#features") Learn More
+        a.btn.btn-outline-secondary.btn-lg(href="#contact") Get Started
+
+    // Features Section
+    section#features.pb-5
+      .container
+        .row.justify-content-center.text-center
+          .col-md-8.col-lg-6
+            .d-flex.flex-column.align-items-center
+              img.img-fluid.rounded-circle.mb-4(src="https://img.magnific.com/free-photo/winter-holiday-concept-attractive-ginger-girl-has-happy-thoughtful-expression-holds-takeout-coffee-drinks-hot-beverage_273609-32852.jpg", alt="winter-holiday", style="width: 246px;")
+              h2.fw-bold Core Features
+              p.text-muted Built fast with Node.js, Pug templates, and Browser-sync.
+        .row.g-4
+          .col-md-4
+            .card.h-100.border-0.shadow-sm.text-center.p-4
+              .card-body
+                .bg-warning.bg-gradient.text-dark.rounded-circle.mx-auto.mb-4.d-flex.align-items-center.justify-content-center(style="width: 86px; height: 86px;")
+                  i.bi.bi-phone.fs-2
+                h3.h5.card-title.fw-bold Responsive Design
+                p.card-text Looks perfect on desktops, tablets, and mobile screens.
+          .col-md-4
+            .card.h-100.border-0.shadow-sm.text-center.p-4
+              .card-body
+                .bg-warning.bg-gradient.text-dark.rounded-circle.mx-auto.mb-4.d-flex.align-items-center.justify-content-center(style="width: 86px; height: 86px;")
+                  i.bi.bi-arrow-clockwise.fs-2
+                h3.h5.card-title.fw-bold Live Reloading
+                p.card-text Browser-sync updates the view instantly on every save.
+          .col-md-4
+            .card.h-100.border-0.shadow-sm.text-center.p-4
+              .card-body
+                .bg-warning.bg-gradient.text-dark.rounded-circle.mx-auto.mb-4.d-flex.align-items-center.justify-content-center(style="width: 86px; height: 86px;")
+                  i.bi.bi-braces.fs-2
+                h3.h5.card-title.fw-bold Clean Code
+                p.card-text Structured using modern semantic HTML elements.
+
+    // Contact Section
+    section#contact.bg-dark.text-light.py-5
+      .container.text-center.py-4
+        h2.fw-bold Connect with Us
+        p.text-light.mb-4 Have questions? Reach out to start your next project.
+        button.btn.btn-warning.px-4 Join Email Chain
+
+    // Footer
+    footer.bg-dark.text-light.text-center.py-3.border-top.border-secondary
+      .container
+        small &copy; 2026 ProjectName. All rights reserved.
+
+    // Bootstrap 5 JS Bundle
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js")
