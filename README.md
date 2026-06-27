@@ -74,11 +74,9 @@ Clone the source files and navigate into the project's root directory. Run `npm 
 
 
 ### 📋 Documentation Architecture
-For comprehensive code insights, deep dives, and specific pipeline implementation details, please refer to the following internal documentation files:
+For comprehensive deep dives, please refer to the following internal documentation files:
 
 *   **[`OVERVIEW.md`](./OVERVIEW.md)**: Detailed folder layout trees, component breakdowns, custom build script logic pipelines, and system features.
-*   **[`CONTRIBUTING.md`](./CONTRIBUTING.md)**: Coding style guide requirements, git branching rules, and template creation workflows.
-
 
 ## Bugs and Issues
 
