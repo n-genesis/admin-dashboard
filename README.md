@@ -80,7 +80,7 @@ For comprehensive deep dives, please refer to the following internal documentati
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](#) here on GitHub or leave a comment on the [template overview page on the N-Gen Design website](#).
+Have a bug or an issue with this template? [Open a new issue](https://github.com/n-genesis/admin-dashboard/issues) here on GitHub.
 
 
 ## 📝 License
