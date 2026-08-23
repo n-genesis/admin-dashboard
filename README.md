@@ -8,7 +8,6 @@ A sleek and fully responsive **Bootstrap 5** Admin Dashboard Theme with swipe ev
 **[View Live Preview](https://admin-template.ngendesign.com/)**
 
 ![Version](https://img.shields.io/badge/version-2.0.0-blue?style=for-the-badge)
-![Static Badge](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
 [![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ## ✨ Features
